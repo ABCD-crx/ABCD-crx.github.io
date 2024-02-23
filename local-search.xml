@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Iint</title>
+    <link href="/2024/02/22/Init/"/>
+    <url>/2024/02/22/Init/</url>
+    
+    <content type="html"><![CDATA[<p>Hexo 框架创建完成</p><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo clean   <span class="hljs-comment">#清除缓存文件 db.json 和已生成的静态文件 public</span><br><br><br></code></pre></td></tr></table></figure><h3 id="创建静态文件"><a href="#创建静态文件" class="headerlink" title="创建静态文件"></a>创建静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo g       <span class="hljs-comment">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span><br></code></pre></td></tr></table></figure><h3 id="创建本地预览"><a href="#创建本地预览" class="headerlink" title="创建本地预览"></a>创建本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo s<br></code></pre></td></tr></table></figure><h3 id="发布上线"><a href="#发布上线" class="headerlink" title="发布上线"></a>发布上线</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo d       <span class="hljs-comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
