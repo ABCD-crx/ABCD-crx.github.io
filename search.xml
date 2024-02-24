@@ -11,6 +11,12 @@
 <h3 id="创建本地预览"><a href="#创建本地预览" class="headerlink" title="创建本地预览"></a>创建本地预览</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo s<br></code></pre></td></tr></table></figure>
 
 <h3 id="发布上线"><a href="#发布上线" class="headerlink" title="发布上线"></a>发布上线</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo d       <span class="hljs-comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="文章在首页的封面图"><a href="#文章在首页的封面图" class="headerlink" title="文章在首页的封面图"></a>文章在首页的封面图</h4><p>对于单篇文章，在文章开头<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter (opens new window)</a>中配置<code>index_img</code>属性。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">--- </span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-string">标签:</span> [ <span class="hljs-string">Hexo</span> , <span class="hljs-string">Fluid</span> ] <br><span class="hljs-attr">index_img:</span>  <span class="hljs-string">/img/example.jpg</span> <br><span class="hljs-attr">date:</span>  <span class="hljs-number">2019-10-10 10:00:00</span> <br><span class="hljs-meta">---</span><br><span class="hljs-string">以下是文章内容</span>	<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><br><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">这是标题</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">Hexo</span>, <span class="hljs-string">Fluid</span>] <span class="hljs-comment"># 标签，也可以通过上述方式设置</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">这是摘要</span> <span class="hljs-comment"># 摘要还可以在正文通过 &lt;!-- more --&gt; 进行分割</span><br><span class="hljs-attr">hide:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 隐藏文章，隐藏后依然可以通过文章链接访问</span><br><span class="hljs-attr">sticky:</span> <span class="hljs-number">100</span> <span class="hljs-comment"># 数值越大排序越靠前</span><br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/example.jpg</span> <span class="hljs-comment"># 文章在首页的封面图，支持外链</span><br><span class="hljs-attr">banner_img:</span> <span class="hljs-string">/img/post_banner.jpg</span> <span class="hljs-comment"># 文章详情页顶部大图，支持外链</span><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br><span class="hljs-string">//</span> <span class="hljs-string">便签</span><br><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">note</span> <span class="hljs-string">success</span> <span class="hljs-string">%</span>&#125;<br><span class="hljs-string">文字</span> <span class="hljs-string">或者</span> <span class="hljs-string">`markdown`</span> <span class="hljs-string">均可</span><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">endnote</span> <span class="hljs-string">%</span>&#125;<br><span class="hljs-string">或者使用</span> <span class="hljs-string">HTML</span> <span class="hljs-string">形式：</span><br><span class="hljs-string">&lt;p</span> <span class="hljs-string">class=&quot;note</span> <span class="hljs-string">note-primary&quot;&gt;标签&lt;/p&gt;</span><br><br><br><span class="hljs-string">//行内标签</span><br><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">label</span> <span class="hljs-string">primary</span> <span class="hljs-string">@text</span> <span class="hljs-string">%</span>&#125;<br><span class="hljs-string">或者</span><br><span class="hljs-string">&lt;span</span> <span class="hljs-string">class=&quot;label</span> <span class="hljs-string">label-primary&quot;&gt;Label&lt;/span&gt;</span><br><br><br><span class="hljs-string">//复选框</span><br><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">cb</span> <span class="hljs-string">text</span>, <span class="hljs-string">checked?</span>, <span class="hljs-string">incline?</span> <span class="hljs-string">%</span>&#125;<br><br><span class="hljs-string">text：显示的文字</span><br><span class="hljs-string">checked：默认是否已勾选，默认</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">incline:</span> <span class="hljs-string">是否内联（可以理解为后面的文字是否换行），默认</span> <span class="hljs-literal">false</span><br><br><br><span class="hljs-string">//按钮</span><br><br>&#123;<span class="hljs-string">%</span> <span class="hljs-string">btn</span> <span class="hljs-string">url</span>, <span class="hljs-string">text</span>, <span class="hljs-string">title</span> <span class="hljs-string">%</span>&#125;<br><br><span class="hljs-string">或者：</span><br><br><span class="hljs-string">&lt;a</span> <span class="hljs-string">class=&quot;btn&quot;</span> <span class="hljs-string">href=&quot;url&quot;</span> <span class="hljs-string">title=&quot;title&quot;&gt;text&lt;/a&gt;</span><br><br><span class="hljs-string">url：跳转链接</span><br><span class="hljs-string">text：显示的文字</span><br><span class="hljs-string">title：鼠标悬停时显示的文字（可选）</span><br></code></pre></td></tr></table></figure>
+
 ]]></content>
       <tags>
         <tag>Hexo</tag>
@@ -651,6 +657,9 @@
 <li>navigatepageNums：导航分页的页码，[1,2,3,4,5]</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>java</tag>
         <tag>MyBatis</tag>
@@ -1593,6 +1602,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; list.size(); i++) &#123;<br>	System. out . printLn(<span class="hljs-string">&quot;对象=&quot;</span> + List. get(i));<br>&#125;<br></code></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>java</tag>
         <tag>javaSE</tag>
@@ -1611,6 +1623,9 @@
 <h3 id="初始化本地库"><a href="#初始化本地库" class="headerlink" title="初始化本地库"></a>初始化本地库</h3><h3 id="github提交流程"><a href="#github提交流程" class="headerlink" title="github提交流程"></a>github提交流程</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git init	//初始化<br>git add .	//所有文件添加到暂存区<br>git commit -m &quot;xxxx&quot; 提交到本地库<br><br>$ git remote add origin git@github.com:ABCD-crx/FruitDay.git<br>			//项目绑定github地址<br>			<br>git push -u origin master //推送到远程仓库<br><br>注：第一次推送可能会出现远程仓库和本地仓库不统一问题 导致推送失败<br>可将远程库拉取到本地解决该问题<br><br>git pull --rebase origin master<br>这条指令的意思是把远程库中的更新合并到本地库中，-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中<br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
         <tag>Git</tag>
@@ -1688,6 +1703,9 @@
 <p>服务端 可以验证jwt是否合法</p>
 <p><img src="https://s2.loli.net/2024/02/24/yGfKF17BXvumdLl.png" alt="image-20240124234153727"></p>
 ]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
       <tags>
         <tag>vue</tag>
         <tag>前端</tag>
@@ -1798,6 +1816,9 @@
 <h3 id="httpd"><a href="#httpd" class="headerlink" title="httpd"></a>httpd</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><code class="hljs pgsql">控制服务：<br>systemctl<br>	<span class="hljs-keyword">enable</span> 开机启动这个服务<br>	<span class="hljs-keyword">disable</span> 取消开机启动<br>	<span class="hljs-keyword">is</span>-<span class="hljs-keyword">enable</span> 查看这个服务是否开机启动<br>	<span class="hljs-keyword">start</span> 启动该服务<br>	<span class="hljs-keyword">is</span>-active 查看该服务是否已经启动<br>	stop 停止该服务<br>	status 查看该服务状态<br>	mask 标记该服务（禁用该服务）<br>	unmask 取消禁用<br>	<span class="hljs-keyword">restart</span> 重启该服务<br>	reload 重新加载该服务<br><br>vim /etc/httpd/conf/httpd.conf<br>	修改<span class="hljs-number">99</span>行 ServerName <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>:<span class="hljs-number">80</span><br>systemctl <span class="hljs-keyword">start</span> httpd	启动服务<br>systemctl status httpd	查看服务启动情况<br>netstat -lntup | grep httpd 查看服务的端口号<br>systemctl status firewalld 查看防火墙<br>firewall-cmd <span class="hljs-comment">--permanent --add-service=http</span><br>查看防火墙放行情况<br>firewall-cmd <span class="hljs-comment">--reload 重载</span><br><br>echo welcome <span class="hljs-keyword">to</span> shiyoudaxue &gt; /var/www/html/<span class="hljs-keyword">index</span>.html<br><br> /var/www/html/ 默认网站内容所在地<br> <br>systemctl stop firewalld 关闭防火墙<br>systemctl <span class="hljs-keyword">disable</span> firewalld 组织防火墙开机启动<br><br>discuz<br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
       </tags>
@@ -1925,6 +1946,9 @@
 <figure class="highlight mipsasm"><table><tr><td class="code"><pre><code class="hljs mipsasm">git <span class="hljs-keyword">bu</span><br><span class="hljs-keyword"></span><br>git rebase  分支合并 把其他分支和并到主分支上<br><br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
         <tag>csa</tag>
@@ -2000,6 +2024,9 @@
 <pre><code class="hljs">
 </code></pre>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
         <tag>docker</tag>
@@ -2664,6 +2691,9 @@
 <figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">acs@9e0ebfcd82d7:~$ chmod +x test2.sh <br>acs@9e0ebfcd82d7:~$ ./test2.sh <br>My name is: yxc<br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
         <tag>csa</tag>
@@ -2729,6 +2759,9 @@
 
 
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
         <tag>csa</tag>
@@ -3716,6 +3749,9 @@
 
 
 ]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
       <tags>
         <tag>python</tag>
       </tags>
@@ -3972,6 +4008,9 @@
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">进入到scrapy shell的终端 直接在window的终端中输入<br>		scrapy shell  域名<br><span class="hljs-comment">#如果需要 高亮 或者 自动补全 那么可以安装 ipython</span><br>		pip install ipython<br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
       <tags>
         <tag>python</tag>
         <tag>爬虫</tag>
@@ -7403,6 +7442,9 @@
 <p>总之，递归公用表表达式对于查询一个有共同的根节点的树形结构数据，非常有用。它可以不受层级的 限制，轻松查出所有节点的数据。如果用其他的查询方式，就比较复杂了。</p>
 <h3 id="3-小结-1"><a href="#3-小结-1" class="headerlink" title="3) 小结"></a>3) 小结</h3><p>公用表表达式的作用是可以替代子查询，而且可以被多次引用。递归公用表表达式对查询有一个共同根 节点的树形结构数据非常高效，可以轻松搞定其他查询方式难以处理的查询。</p>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>java</tag>
         <tag>MySQL</tag>
@@ -8053,6 +8095,9 @@
 <p><img src="https://s2.loli.net/2024/02/24/Vvol4DNdXWRGjuY.png" alt="image-20230305151238194"></p>
 <h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><p><img src="https://s2.loli.net/2024/02/24/Ru49MwDIxAriByg.png" alt="image-20230305164651482"></p>
 ]]></content>
+      <categories>
+        <category>408</category>
+      </categories>
       <tags>
         <tag>操作系统</tag>
         <tag>考研</tag>
@@ -8060,7 +8105,7 @@
   </entry>
   <entry>
     <title>计算机组成原理</title>
-    <url>/2023/03/18/%E8%80%83%E7%A0%94/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
+    <url>/2023/04/18/%E8%80%83%E7%A0%94/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h1 id="计算机系统概论"><a href="#计算机系统概论" class="headerlink" title="计算机系统概论"></a>计算机系统概论</h1><h2 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="计算机发展历程"></a>计算机发展历程</h2><p>计算机系统 &#x3D; 硬件 + 软件</p>
 <p>硬件发展</p>
 <ul>
@@ -8703,6 +8748,9 @@
 <p>资源空闲让给其他 指令使用</p>
 <h3 id="总结-13"><a href="#总结-13" class="headerlink" title="总结"></a>总结</h3><p><img src="D:\笔记\照片\image-20221201211044754.png" alt="image-20221201211044754"></p>
 ]]></content>
+      <categories>
+        <category>408</category>
+      </categories>
       <tags>
         <tag>考研</tag>
         <tag>计组</tag>
@@ -8815,6 +8863,9 @@
 <h3 id="bitset"><a href="#bitset" class="headerlink" title="bitset"></a>bitset</h3><figure class="highlight gams"><table><tr><td class="code"><pre><code class="hljs gams">bitset, 圧位<br>    bitset&lt;<span class="hljs-number">10000</span>&gt; s;<br>    ~(取反), &amp;, |, ^<br>    &gt;&gt;, &lt;&lt;<br>    ==, !=<br>    []<br><br>    count()  返回有多少个<span class="hljs-number">1</span><br><br>    any()  判断是否至少有一个<span class="hljs-number">1</span><br>    none()  判断是否全为<span class="hljs-number">0</span><br><br>    <span class="hljs-keyword">set</span>()  把所有位置成1<br>    <span class="hljs-keyword">set</span>(k, v)  将第<span class="hljs-comment">k</span>位变成<span class="hljs-comment">v</span><br>    reset()  把所有位变成<span class="hljs-comment">0</span><br>    flip()  等价于~<br>    flip(k) 把第<span class="hljs-comment">k</span>位取反<br></code></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
       <tags>
         <tag>c++</tag>
         <tag>c</tag>
@@ -9680,6 +9731,10 @@
 
 <h2 id="综合比较"><a href="#综合比较" class="headerlink" title="综合比较"></a>综合比较</h2><p><img src="https://s2.loli.net/2024/02/24/ukEmTn96axJCvsL.png" alt="image-20220612193502836"></p>
 ]]></content>
+      <categories>
+        <category>408</category>
+        <category>算法</category>
+      </categories>
       <tags>
         <tag>考研</tag>
         <tag>数据结构</tag>

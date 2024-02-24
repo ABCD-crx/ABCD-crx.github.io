@@ -16,12 +16,12 @@
   <meta name="author" content="Crx">
   <meta name="keywords" content="C,C++,Java,Vue,Linux,Docker">
   
-    <meta name="description" content="基础常量与变量answer  &#x3D;  99	—&gt;	标识符（变量）    赋值符	值  python 变量 123451.不用事先声明变量，赋值过程中就包含了变量的声明和定义2.用&quot; &#x3D; &quot;赋值，左边是变量名，右边是变量值3.使用前必须先被初始化（先被赋值）4.可以通过del语句删除不再使用的变量	python中有垃圾回收装置，所以也可以不用操作  变量： 1234">
+    <meta name="description" content="Python笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python">
 <meta property="og:url" content="http://example.com/2020/09/11/Python/Python/index.html">
 <meta property="og:site_name" content="Chenrx&#39;s Blog">
-<meta property="og:description" content="基础常量与变量answer  &#x3D;  99	—&gt;	标识符（变量）    赋值符	值  python 变量 123451.不用事先声明变量，赋值过程中就包含了变量的声明和定义2.用&quot; &#x3D; &quot;赋值，左边是变量名，右边是变量值3.使用前必须先被初始化（先被赋值）4.可以通过del语句删除不再使用的变量	python中有垃圾回收装置，所以也可以不用操作  变量： 1234">
+<meta property="og:description" content="Python笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2024/02/24/Xle3Ywp7bcifhDo.png">
 <meta property="og:image" content="https://s2.loli.net/2024/02/24/jJGBa4hMrIyiTeb.png">
@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://s2.loli.net/2024/02/24/1qICLtQbZGrxiNM.png">
 <meta property="og:image" content="https://s2.loli.net/2024/02/24/Oryqa8CjIv3xBZA.png">
 <meta property="article:published_time" content="2020-09-11T01:24:45.000Z">
-<meta property="article:modified_time" content="2024-02-23T17:07:10.322Z">
+<meta property="article:modified_time" content="2024-02-24T06:34:19.250Z">
 <meta property="article:author" content="Crx">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
@@ -199,7 +199,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/background/background3.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -239,7 +239,7 @@
         
         
         
-          209 分钟
+          314 分钟
         
       </span>
     
@@ -277,6 +277,16 @@
         <div id="board">
           <article class="post-content mx-auto">
             <h1 id="seo-header">Python</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2024-02-24T14:34:19+08:00
+                  
+                  
+
+                
+              </p>
             
             
               <div class="markdown-body">
@@ -1266,6 +1276,27 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Python/" class="category-chain-item">Python</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
@@ -1298,6 +1329,11 @@
           <div>2020年9月11日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年2月24日</div>
+        </div>
       
       
         <div class="license-meta-item">
@@ -1488,6 +1524,33 @@
   
 
 
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
 
 
   

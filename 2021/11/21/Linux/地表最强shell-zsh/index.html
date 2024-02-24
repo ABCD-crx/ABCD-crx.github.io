@@ -16,15 +16,15 @@
   <meta name="author" content="Crx">
   <meta name="keywords" content="C,C++,Java,Vue,Linux,Docker">
   
-    <meta name="description" content="地表最强shell-zshredhat8 更改yum源redhat安装完成后是不能直接使用yum安装的，会提示我们没有注册，所以要修改成Centos的源 1This system is not registered to Red Hat Subscription Management. You can use subscription-manager to register.  这里使用阿里云Ce">
+    <meta name="description" content="shell美化之地表最强shell-zsh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="地表最强shell-zsh">
 <meta property="og:url" content="http://example.com/2021/11/21/Linux/%E5%9C%B0%E8%A1%A8%E6%9C%80%E5%BC%BAshell-zsh/index.html">
 <meta property="og:site_name" content="Chenrx&#39;s Blog">
-<meta property="og:description" content="地表最强shell-zshredhat8 更改yum源redhat安装完成后是不能直接使用yum安装的，会提示我们没有注册，所以要修改成Centos的源 1This system is not registered to Red Hat Subscription Management. You can use subscription-manager to register.  这里使用阿里云Ce">
+<meta property="og:description" content="shell美化之地表最强shell-zsh">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-21T07:24:45.000Z">
-<meta property="article:modified_time" content="2024-02-23T16:55:02.062Z">
+<meta property="article:modified_time" content="2024-02-24T06:31:05.901Z">
 <meta property="article:author" content="Crx">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="csa">
@@ -193,7 +193,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/background/background3.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -233,7 +233,7 @@
         
         
         
-          6 分钟
+          9 分钟
         
       </span>
     
@@ -271,6 +271,16 @@
         <div id="board">
           <article class="post-content mx-auto">
             <h1 id="seo-header">地表最强shell-zsh</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2024-02-24T14:31:05+08:00
+                  
+                  
+
+                
+              </p>
             
             
               <div class="markdown-body">
@@ -338,6 +348,27 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
@@ -374,6 +405,11 @@
           <div>2021年11月21日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年2月24日</div>
+        </div>
       
       
         <div class="license-meta-item">
@@ -570,6 +606,33 @@
   
 
 
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
 
 
   

@@ -16,36 +16,21 @@
   <meta name="author" content="Crx">
   <meta name="keywords" content="C,C++,Java,Vue,Linux,Docker">
   
-    <meta name="description" content="导入表的问题导入数据时外键约束问题 数据导入指令： 1source d:\xxx.sql  通过FOREIGN_KEY_CHECKS解决，用法如下： 12set FOREIGN_KEY_CHECKS&#x3D;0;  #在导入前设置为不检查外键约束set FOREIGN_KEY_CHECKS&#x3D;1;  #在导入后恢复检查外键约束  第三章_最基本的SELECT语句1. SQL语言的规则和规范1) 基本规则 S">
+    <meta name="description" content="Mysql入门之路">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL">
 <meta property="og:url" content="http://example.com/2022/07/05/MySQL/MySQL/index.html">
 <meta property="og:site_name" content="Chenrx&#39;s Blog">
-<meta property="og:description" content="导入表的问题导入数据时外键约束问题 数据导入指令： 1source d:\xxx.sql  通过FOREIGN_KEY_CHECKS解决，用法如下： 12set FOREIGN_KEY_CHECKS&#x3D;0;  #在导入前设置为不检查外键约束set FOREIGN_KEY_CHECKS&#x3D;1;  #在导入后恢复检查外键约束  第三章_最基本的SELECT语句1. SQL语言的规则和规范1) 基本规则 S">
+<meta property="og:description" content="Mysql入门之路">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/pz4oOtXjN8iD9am.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/AME5hZSJ4pjizRs.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/JWvp2ZGh6I8lHPC.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/n5qlsOFDpcEwzjP.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/DYEhJT9SpAeC7Mg.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/ePpS4bqua9sCONA.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/SeDPukqrlnJfBvU.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/eBGJlCEOP9Q57nU.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/zSjcqIdYKiOGE17.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/b74PGrIUlkxWDh3.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/MaFBVJypNZrv9we.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/1gdiPzGnR8ylFO3.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/kT1rxNJDZpaColQ.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/cjL1B3wTmOUkRGx.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/2uVyGJHZDWlQEs3.png">
-<meta property="og:image" content="https://s2.loli.net/2024/02/24/eoZwGW9SLPUzAu2.png">
+<meta property="og:image" content="https://www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png">
 <meta property="article:published_time" content="2022-07-05T06:24:45.000Z">
-<meta property="article:modified_time" content="2024-02-23T17:41:28.350Z">
+<meta property="article:modified_time" content="2024-02-24T07:06:18.941Z">
 <meta property="article:author" content="Crx">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s2.loli.net/2024/02/24/pz4oOtXjN8iD9am.png">
+<meta name="twitter:image" content="https://www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png">
   
   
   
@@ -209,7 +194,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/background/background3.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -249,7 +234,7 @@
         
         
         
-          401 分钟
+          601 分钟
         
       </span>
     
@@ -287,6 +272,16 @@
         <div id="board">
           <article class="post-content mx-auto">
             <h1 id="seo-header">MySQL</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2024-02-24T15:06:18+08:00
+                  
+                  
+
+                
+              </p>
             
             
               <div class="markdown-body">
@@ -3721,6 +3716,27 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Java/" class="category-chain-item">Java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
@@ -3755,6 +3771,11 @@
           <div>2022年7月5日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年2月24日</div>
+        </div>
       
       
         <div class="license-meta-item">
@@ -3951,6 +3972,33 @@
   
 
 
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
+      }
+      updatedTime.style.display = '';
+    }
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
+    } else {
+      relativeDate();
+    }
+  });
+</script>
 
 
   
