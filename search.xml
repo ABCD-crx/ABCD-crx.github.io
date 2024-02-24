@@ -7529,7 +7529,7 @@
 <h3 id="操作系统的内核"><a href="#操作系统的内核" class="headerlink" title="操作系统的内核"></a>操作系统的内核</h3><p>内核是计算机.上配置的底层软件，是操作系统最基本、最核心的部分。.</p>
 <p>实现操作系统内核功能的那些程序就是内核程序。</p>
 <p><img src="https://s2.loli.net/2024/02/24/t6NSRp1jGvoKYa4.png" alt="image-20220831222605559"></p>
-<p><img src="D:\笔记\照片\image-20220831224923309.png" alt="image-20220831224923309"></p>
+<p><img src="https://s2.loli.net/2024/02/24/tqBFAbUYlSjd8VL.png" alt="image-20220831224923309"></p>
 <p>操作系统结构</p>
 <p>简单操作系统：MS-DOS（1081-1994） 不分模块的单体内核</p>
 <h2 id="OS的启动"><a href="#OS的启动" class="headerlink" title="OS的启动"></a>OS的启动</h2><p><img src="https://s2.loli.net/2024/02/24/1CgPSO7G9RnKzEr.png" alt="image-20220903165255905">**</p>
@@ -7801,8 +7801,8 @@
 
 <p>进程调度的频率很高，一般几十毫秒一次。</p>
 <p><img src="https://s2.loli.net/2024/02/24/dwTNFvAqJnoUbSu.png" alt="image-20220922142912434"></p>
-<p><img src="D:\笔记\照片\image-20220922143122629.png" alt="image-20220922143122629"></p>
-<h3 id="进程调度的时机"><a href="#进程调度的时机" class="headerlink" title="进程调度的时机"></a>进程调度的时机</h3><p><img src="D:\笔记\照片\image-20220922145413365.png" alt="image-20220922145413365"></p>
+<p><img src="https://s2.loli.net/2024/02/24/aibY3AwUVveI4dJ.png" alt="image-20220922143122629"></p>
+<h3 id="进程调度的时机"><a href="#进程调度的时机" class="headerlink" title="进程调度的时机"></a>进程调度的时机</h3><p><img src="https://s2.loli.net/2024/02/24/5L6uyUIlWZt8CrF.png" alt="image-20220922145413365"></p>
 <p>临界区的概念</p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">每个进程中访问临界资源的那段程序称为临界区（临界资源是一次仅允许一个进程使用的共享资源）。每次只准许一个进程进入临界区，进入后不允许其他进程进入。<br></code></pre></td></tr></table></figure>
 
@@ -7812,8 +7812,8 @@
 <li><strong>非剥夺调度方式，又称非抢占方式</strong>。即，只允许进程主动放弃处理机。在运行过程中即便有更紧迫的任务到达，当前进程依然会继续使用处理机，直到该进程终止或主动要求进入阻塞态。</li>
 <li><strong>剥夺调度方式，又称抢占方式</strong>。当一个进程正在处理机上执行时，如果有-一个更重要或更紧迫的进程需要使用处理机，则立即暂停正在执行的进程，将处理机分配给更重要紧迫的那个进程。</li>
 </ol>
-<h3 id="进程的切换与过程"><a href="#进程的切换与过程" class="headerlink" title="进程的切换与过程"></a>进程的切换与过程</h3><p><img src="D:\笔记\照片\image-20221104155841272.png" alt=" "></p>
-<p><img src="D:\笔记\照片\image-20220922160000693.png" alt="image-20220922160000693"></p>
+<h3 id="进程的切换与过程"><a href="#进程的切换与过程" class="headerlink" title="进程的切换与过程"></a>进程的切换与过程</h3><p><img src="https://s2.loli.net/2024/02/24/ifjRUTbYoFKH29m.png" alt=" "></p>
+<p><img src="https://s2.loli.net/2024/02/24/wfBzMndcFkPNab1.png" alt="image-20220922160000693"></p>
 <h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><p>评价指标</p>
 <ul>
 <li><p>CPU利用率:指CPU“忙碌”的时间占总时间的比例。</p>
@@ -7823,7 +7823,7 @@
 <p>它包括四个部分:作业在外存后备队列上等待作业调度(高级调度)的时间、进程在就继队列上等待进程调度(低级调度)的时间、进程在CPU.上执行的时间、进程等待I&#x2F;O操作完成的时间。后三项在一个作业的整个处理过程中，可能发生多次。</p>
 <p><strong>周转时间&#x3D;作业完成时间-作业提交时间</strong></p>
 <p><strong>平均周转时间</strong>&#x3D;各作业周转时间之和 &#x2F; 作业数</p>
-<p><img src="D:\笔记\照片\image-20221002214937923.png" alt="image-20221002214937923"></p>
+<p><img src="https://s2.loli.net/2024/02/24/3oa5wBFJz7vDS9Q.png" alt="image-20221002214937923"></p>
 </li>
 <li><p>等待时间，指进程&#x2F;作业<strong>处于等待处理机状态时间之和</strong>，等待时间越长，用户满意度越低。</p>
 <p>作业调入内存后，建立对应的进程。这个进程会被CPU服务、会被1&#x2F;O设备服务，当然也会有等待被服务的时候</p>
@@ -7835,36 +7835,36 @@
 <li><p><strong>响应时间</strong>，指从用户提交请求到<strong>首次产生响应所用的时间</strong>。</p>
 </li>
 </ul>
-<p><img src="D:\笔记\照片\image-20221002215547954.png" alt="image-20221002215547954"></p>
+<p><img src="https://s2.loli.net/2024/02/24/YRb3QzGVq6Dc1Kk.png" alt="image-20221002215547954"></p>
 <h3 id="先来先服务（FCFS）"><a href="#先来先服务（FCFS）" class="headerlink" title="先来先服务（FCFS）"></a>先来先服务（FCFS）</h3><p>先来先服务调度算法:按照到达的先后顺序调度，事实上就是等待时间越久的越优先得到服务。</p>
-<p><img src="D:\笔记\照片\image-20221104164815471.png" alt="image-20221104164815471"></p>
+<p><img src="https://s2.loli.net/2024/02/24/sj42QZMSA6lpbcU.png" alt="image-20221104164815471"></p>
 <p>总结</p>
-<p><img src="D:\笔记\照片\image-20221104165106610.png" alt="image-20221104165106610"></p>
+<p><img src="https://s2.loli.net/2024/02/24/7zcWRnpHPk2CDbY.png" alt="image-20221104165106610"></p>
 <h3 id="短作业优先（SJF）"><a href="#短作业优先（SJF）" class="headerlink" title="短作业优先（SJF）"></a>短作业优先（SJF）</h3><p><strong>非抢占式的</strong></p>
-<p><img src="D:\笔记\照片\image-20221104165423485.png" alt="image-20221104165423485"></p>
+<p><img src="https://s2.loli.net/2024/02/24/N581HjhFbtKISpP.png" alt="image-20221104165423485"></p>
 <p><strong>抢占式的</strong></p>
 <p>最短剩余时间优先算法</p>
-<p><img src="D:\笔记\照片\image-20221104165739210.png" alt="image-20221104165739210"></p>
-<p><img src="D:\笔记\照片\image-20221104170239340.png" alt="image-20221104170239340"></p>
-<h3 id="高响应比优先（HRRN）"><a href="#高响应比优先（HRRN）" class="headerlink" title="高响应比优先（HRRN）"></a>高响应比优先（HRRN）</h3><p><img src="D:\笔记\照片\image-20221104170628838.png" alt="image-20221104170628838"></p>
-<p><img src="D:\笔记\照片\image-20221104170733149.png" alt="image-20221104170733149"></p>
-<p><img src="D:\笔记\照片\image-20221104170750402.png" alt="image-20221104170750402"></p>
-<p><img src="D:\笔记\照片\image-20221104170818695.png" alt="image-20221104170818695"></p>
-<h3 id="时间片轮转法RR"><a href="#时间片轮转法RR" class="headerlink" title="时间片轮转法RR"></a>时间片轮转法RR</h3><p><img src="D:\笔记\照片\image-20221104212722251.png" alt="image-20221104212722251"></p>
-<p><img src="D:\笔记\照片\image-20221104212839003.png" alt="image-20221104212839003"></p>
+<p><img src="https://s2.loli.net/2024/02/24/2h1H93TCN5IKXQj.png" alt="image-20221104165739210"></p>
+<p><img src="https://s2.loli.net/2024/02/24/sdE8QoGDtPfFgSk.png" alt="image-20221104170239340"></p>
+<h3 id="高响应比优先（HRRN）"><a href="#高响应比优先（HRRN）" class="headerlink" title="高响应比优先（HRRN）"></a>高响应比优先（HRRN）</h3><p><img src="https://s2.loli.net/2024/02/24/AQJx8FntCHl6kTy.png" alt="image-20221104170628838"></p>
+<p><img src="https://s2.loli.net/2024/02/24/hGNl7uHFqSLpJQs.png" alt="image-20221104170733149"></p>
+<p><img src="https://s2.loli.net/2024/02/24/m7LIKjdrQX8w6kb.png" alt="image-20221104170750402"></p>
+<p><img src="https://s2.loli.net/2024/02/24/HKLRfBtQspMoiF8.png" alt="image-20221104170818695"></p>
+<h3 id="时间片轮转法RR"><a href="#时间片轮转法RR" class="headerlink" title="时间片轮转法RR"></a>时间片轮转法RR</h3><p><img src="https://s2.loli.net/2024/02/24/6n8Wzg5odty1pS7.png" alt="image-20221104212722251"></p>
+<p><img src="https://s2.loli.net/2024/02/24/iU1M9JOpD2RKXof.png" alt="image-20221104212839003"></p>
 <h3 id="优先级调度算法"><a href="#优先级调度算法" class="headerlink" title="优先级调度算法"></a>优先级调度算法</h3><p>非抢占式的优先级调度算法:每次调度时选择当前已到达且<br>优先级最高的进程。当前进程主动放弃处理机时发生调度。</p>
-<p><img src="D:\笔记\照片\image-20221104213108006.png" alt="image-20221104213108006"></p>
+<p><img src="https://s2.loli.net/2024/02/24/SE3IixrDByfhZAl.png" alt="image-20221104213108006"></p>
 <p>抢占式的优先级调度算法:每次调度时选择<strong>当前已到达且优先级最高</strong>的进程。当前进程主动放弃处理机时发生调度。另外，当<strong>就绪队列发生改变时也需要检查是会发生抢占</strong>。</p>
-<p><img src="D:\笔记\照片\image-20221104213231445.png" alt="image-20221104213231445"></p>
+<p><img src="https://s2.loli.net/2024/02/24/WS5IB9w4QTVhg7c.png" alt="image-20221104213231445"></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++">就绪队列未必只有一一个，可以按照不同优先级来组织。<br>另外，也可以把优先级高的进程排在更靠近队头的位置<br><br>根据优先级是否可以动态改变，可将优先级分为<span class="hljs-string">&#x27;静态优先级&#x27;</span>和<span class="hljs-string">&#x27;动态优先级&#x27;</span>两种。<br><br>静态优先级:创建进程时确定，之后一直不变。<br>动态优先级:创建进程时有-个初始值，之后会根据情况动态地调整优先级。<br><br><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221104213929145.png" alt="image-20221104213929145"></p>
+<p><img src="https://s2.loli.net/2024/02/24/ZS8BVWLeFTridtQ.png" alt="image-20221104213929145"></p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">I</span>/<span class="hljs-number">0</span>设备和CPU可以并行工作。如果优先让I/<span class="hljs-number">0</span>繁忙型进程优先运行的话，则越有可能让I/<span class="hljs-number">0</span>设备尽早地投入工作，则资源利用率、系统吞吐量都会得到提升<br><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221104214041222.png" alt="image-20221104214041222"></p>
-<h3 id="多级反馈队列调度算法"><a href="#多级反馈队列调度算法" class="headerlink" title="多级反馈队列调度算法"></a>多级反馈队列调度算法</h3><p><img src="D:\笔记\照片\image-20221104214505934.png" alt="image-20221104214505934"></p>
-<p><img src="D:\笔记\照片\image-20221104214706096.png" alt="image-20221104214706096"></p>
-<p><img src="D:\笔记\照片\image-20221104214721694.png" alt="image-20221104214721694"></p>
+<p><img src="https://s2.loli.net/2024/02/24/wYEqZjW8zLFJVns.png" alt="image-20221104214041222"></p>
+<h3 id="多级反馈队列调度算法"><a href="#多级反馈队列调度算法" class="headerlink" title="多级反馈队列调度算法"></a>多级反馈队列调度算法</h3><p><img src="https://s2.loli.net/2024/02/24/wdlKr9NJAiQbntk.png" alt="image-20221104214505934"></p>
+<p><img src="https://s2.loli.net/2024/02/24/UvZC8Xn3ftVGuld.png" alt="image-20221104214706096"></p>
+<p><img src="https://s2.loli.net/2024/02/24/7jNZkUJcVgom63y.png" alt="image-20221104214721694"></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs C++">注:比起早期的批处理操作系统来说，由于计算机造价大幅降低，因此之后出现的交互式操作系统(包括分时操作系统、实时操作系统等)更注重系统的响应时间、公平性、平衡性等指标。而这几种算法恰好也能较好地满足交互式系统的需求。因此这三种算法适合用于<span class="hljs-string">&#x27;交互式系统&#x27;</span>。( 比如UNIX使用的就是多级反馈队列调度算法)<br></code></pre></td></tr></table></figure>
 
 <h2 id="进程同步-进程互斥"><a href="#进程同步-进程互斥" class="headerlink" title="进程同步 进程互斥"></a>进程同步 进程互斥</h2><h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><p>同步亦称直接制约关系，它是指为完成某种任务而建立的两个或多个进程，这些进程因为需要在身些位置上协调它们的工作次序而产生的制约关系。进程间的直接制约关系就是源于它们之间的相合作。</p>
@@ -7879,83 +7879,83 @@
 <li>让权等待。当进程不能进入临界区时，应立即释放处理机，防止进程忙等待。</li>
 </ol>
 <h3 id="进程互斥的软件实现方法"><a href="#进程互斥的软件实现方法" class="headerlink" title="进程互斥的软件实现方法"></a>进程互斥的软件实现方法</h3><h4 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h4><p>算法思想:两个进程在<strong>访问完临界区后</strong>会把使用临界区8的权限转交给另-一个进程。也就是说<strong>每个进程进入临界区的权限只能被另一个进程赋予</strong></p>
-<p><img src="D:\笔记\照片\image-20221105092441895.png" alt="image-20221105092441895"></p>
+<p><img src="https://s2.loli.net/2024/02/24/QJzXensVx72Zvcd.png" alt="image-20221105092441895"></p>
 <figure class="highlight armasm"><table><tr><td class="code"><pre><code class="hljs armasm">如果开始 <span class="hljs-built_in">P0</span>不访问临界区，即使临界区空闲 <span class="hljs-built_in">P1</span>也无法访问、<br>只能 <span class="hljs-built_in">p0</span> -&gt;<span class="hljs-built_in">P1</span> -&gt; <span class="hljs-built_in">P0</span> 交替访问<br></code></pre></td></tr></table></figure>
 
-<h4 id="双标志先检查法"><a href="#双标志先检查法" class="headerlink" title="双标志先检查法"></a>双标志先检查法</h4><p><img src="D:\笔记\照片\image-20221105093828908.png" alt="image-20221105093828908"></p>
+<h4 id="双标志先检查法"><a href="#双标志先检查法" class="headerlink" title="双标志先检查法"></a>双标志先检查法</h4><p><img src="https://s2.loli.net/2024/02/24/QPR62BkgOcsr8T5.png" alt="image-20221105093828908"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">检查 和上锁 不是一起合成的 可能会 发生 同时访问临界区的情况<br></code></pre></td></tr></table></figure>
 
-<h4 id="双标志后检查法"><a href="#双标志后检查法" class="headerlink" title="双标志后检查法"></a>双标志后检查法</h4><p><img src="D:\笔记\照片\image-20221105094850259.png" alt="image-20221105094850259"></p>
+<h4 id="双标志后检查法"><a href="#双标志后检查法" class="headerlink" title="双标志后检查法"></a>双标志后检查法</h4><p><img src="https://s2.loli.net/2024/02/24/6py9aoAjtzFL7cS.png" alt="image-20221105094850259"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">双标志位后检查法，两个进程都争着进入临界区则会都无法进入<br></code></pre></td></tr></table></figure>
 
 
 
-<h4 id="Peterson算法"><a href="#Peterson算法" class="headerlink" title="Peterson算法"></a>Peterson算法</h4><p><img src="D:\笔记\照片\image-20221106153724899.png" alt="image-20221106153724899"></p>
+<h4 id="Peterson算法"><a href="#Peterson算法" class="headerlink" title="Peterson算法"></a>Peterson算法</h4><p><img src="https://s2.loli.net/2024/02/24/v8d2n7KCEDmQLHb.png" alt="image-20221106153724899"></p>
 <p>Peterson算法用软件方法解决了进程互斥问题，遵循了<strong>空闲让进、忙则等待、有限等待三个原则</strong>，但是<strong>依然未遵循让权等待</strong>的原则。</p>
-<p><img src="D:\笔记\照片\image-20221106153934110.png" alt="image-20221106153934110"></p>
-<h3 id="进程互斥的硬件解决方法"><a href="#进程互斥的硬件解决方法" class="headerlink" title="进程互斥的硬件解决方法"></a>进程互斥的硬件解决方法</h3><h4 id="中断屏蔽的方法"><a href="#中断屏蔽的方法" class="headerlink" title="中断屏蔽的方法"></a>中断屏蔽的方法</h4><p><img src="D:\笔记\照片\image-20221106154827671.png" alt="image-20221106154827671"></p>
+<p><img src="https://s2.loli.net/2024/02/24/QFOUx6mYTAV2is7.png" alt="image-20221106153934110"></p>
+<h3 id="进程互斥的硬件解决方法"><a href="#进程互斥的硬件解决方法" class="headerlink" title="进程互斥的硬件解决方法"></a>进程互斥的硬件解决方法</h3><h4 id="中断屏蔽的方法"><a href="#中断屏蔽的方法" class="headerlink" title="中断屏蔽的方法"></a>中断屏蔽的方法</h4><p><img src="https://s2.loli.net/2024/02/24/Z5hqLud8goEHAcl.png" alt="image-20221106154827671"></p>
 <h3 id="互斥锁"><a href="#互斥锁" class="headerlink" title="互斥锁"></a>互斥锁</h3><p>锁 用于形成进程互斥</p>
-<p><img src="D:\笔记\照片\image-20221110105733141.png" alt="image-20221110105733141"></p>
+<p><img src="https://s2.loli.net/2024/02/24/TLQbvxkOzwnlfeJ.png" alt="image-20221110105733141"></p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown">特性:<br><span class="hljs-code">	需忙等，进程时间片用完才下处理机，违反“让权等待”</span><br><span class="hljs-code">	优点:等待期间不用切换进程上下文，多处理器系统中，若上锁的时间短，则等待代价很低</span><br><span class="hljs-code">	常用于多处理器系统，一个核忙等，其他核照常工作，并快速释放临界区</span><br><span class="hljs-code">	不太适用于单处理机系统，忙等的过程中不可能解锁</span><br><span class="hljs-code"></span><br></code></pre></td></tr></table></figure>
 
-<h3 id="信号量机制"><a href="#信号量机制" class="headerlink" title="信号量机制"></a>信号量机制</h3><p><img src="D:\笔记\照片\image-20221110110315180.png" alt="image-20221110110315180"></p>
+<h3 id="信号量机制"><a href="#信号量机制" class="headerlink" title="信号量机制"></a>信号量机制</h3><p><img src="https://s2.loli.net/2024/02/24/7wEM9K1STqcnOes.png" alt="image-20221110110315180"></p>
 <figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">信号量：其实就是一个变量<span class="hljs-comment">(可以是一个整数，也可以是更复杂的记录型变量)</span>，可以用一个信号量来表示系统中某种资源的数量，比如:系统中只有一-台打印机，就可以设置一一个初值为<span class="hljs-number">1</span>的信号量。<br><br>原语是一种特殊的程序段，其执行只能一气呵成，不可被中断。原语是由关中断/开中断指令实现的。软件解决方案的主要问题是由“进入区的各种操作无法- -气呵成”，因此如果能把进入区、退出区的操作都用“原语”实现，使这些操作能“一气呵成”就能避免问题。<br><br></code></pre></td></tr></table></figure>
 
-<h4 id="整形信号量"><a href="#整形信号量" class="headerlink" title="整形信号量"></a>整形信号量</h4><p><img src="D:\笔记\照片\image-20221110111555646.png" alt="image-20221110111555646"></p>
+<h4 id="整形信号量"><a href="#整形信号量" class="headerlink" title="整形信号量"></a>整形信号量</h4><p><img src="https://s2.loli.net/2024/02/24/cBdbxwIiWQ9uPTh.png" alt="image-20221110111555646"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">整形信号量存在的问题 ： 不满足“让权等待”原则，会发生“忙等”<br></code></pre></td></tr></table></figure>
 
-<h4 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h4><p><img src="D:\笔记\照片\image-20221110111958194.png" alt="image-20221110111958194"></p>
-<h4 id="信号量机制实现进程同步"><a href="#信号量机制实现进程同步" class="headerlink" title="信号量机制实现进程同步"></a>信号量机制实现进程同步</h4><p><img src="D:\笔记\照片\image-20221111154449879.png" alt="image-20221111154449879"></p>
+<h4 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h4><p><img src="https://s2.loli.net/2024/02/24/5GRYiPZJO7nQzVr.png" alt="image-20221110111958194"></p>
+<h4 id="信号量机制实现进程同步"><a href="#信号量机制实现进程同步" class="headerlink" title="信号量机制实现进程同步"></a>信号量机制实现进程同步</h4><p><img src="https://s2.loli.net/2024/02/24/1gNncfBYRFIVqMe.png" alt="image-20221111154449879"></p>
 <h4 id="互斥-同步-前驱"><a href="#互斥-同步-前驱" class="headerlink" title="互斥 同步 前驱"></a>互斥 同步 前驱</h4><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">进程互斥：<br>	设置互斥信号量，初值为<span class="hljs-number">1</span>，<br>	临界区之前对信号量执行<span class="hljs-selector-tag">P</span>操作，临界区之后执行V操作<br>	<br>进程同步 <br>	寻找“一前一后”同步关系<br>	设置同步性量，初值为<span class="hljs-number">0</span>；<br>	在“前操作” 在前操作 之后执行V<br>	在“后操作” 之前 执行 <span class="hljs-selector-tag">P</span><br></code></pre></td></tr></table></figure>
 
 
 
-<p><img src="D:\笔记\照片\image-20221111155248536.png" alt="image-20221111155248536"></p>
-<h3 id="生产者和消费者问题"><a href="#生产者和消费者问题" class="headerlink" title="生产者和消费者问题"></a>生产者和消费者问题</h3><p><img src="D:\笔记\照片\image-20221111160937110.png" alt="image-20221111160937110"></p>
-<p><img src="D:\笔记\照片\image-20221111161142893.png" alt="image-20221111161142893"></p>
+<p><img src="https://s2.loli.net/2024/02/24/FWxv8b5YAyCVjz4.png" alt="image-20221111155248536"></p>
+<h3 id="生产者和消费者问题"><a href="#生产者和消费者问题" class="headerlink" title="生产者和消费者问题"></a>生产者和消费者问题</h3><p><img src="https://s2.loli.net/2024/02/24/HpgtDb81KPwaXmc.png" alt="image-20221111160937110"></p>
+<p><img src="https://s2.loli.net/2024/02/24/AyHFnf6aQD9dVjI.png" alt="image-20221111161142893"></p>
 <figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf">semaphore mutex <span class="hljs-operator">=</span> <span class="hljs-number">1</span><span class="hljs-comment">;	//互斥信号量，实现对缓冲区的互斥访问</span><br>semaphore empty <span class="hljs-operator">=</span> n<span class="hljs-comment">;	//同步信号量，表示空闲缓冲区的数量</span><br>semaphore full <span class="hljs-operator">=</span> <span class="hljs-number">0</span><span class="hljs-comment">;		//同步信号量，表示产品的数量，也即非空缓冲区的数量</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221111161441385.png" alt="image-20221111161441385"></p>
-<h3 id="多生产者-多消费者"><a href="#多生产者-多消费者" class="headerlink" title="多生产者 - 多消费者"></a>多生产者 - 多消费者</h3><p><img src="D:\笔记\照片\image-20221111162322174.png" alt="image-20221111162322174"></p>
-<p><img src="D:\笔记\照片\image-20221111163906639.png" alt="image-20221111163906639"></p>
+<p><img src="https://s2.loli.net/2024/02/24/sgoLKvZD5EyuR1J.png" alt="image-20221111161441385"></p>
+<h3 id="多生产者-多消费者"><a href="#多生产者-多消费者" class="headerlink" title="多生产者 - 多消费者"></a>多生产者 - 多消费者</h3><p><img src="https://s2.loli.net/2024/02/24/YcslKom6qLEjT3U.png" alt="image-20221111162322174"></p>
+<p><img src="https://s2.loli.net/2024/02/24/W5zMsNUCKqx3jmQ.png" alt="image-20221111163906639"></p>
 <h1 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h1><p>内存可存放数据。程<strong>序执行前需要先放到内存中才能被CPU处理</strong>–缓和CPU与硬盘之间的速度矛盾</p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">存储单元 ： 存放数据的最小单元<br><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221130145928135.png" alt="image-20221130145928135"></p>
-<p><img src="D:\笔记\照片\image-20221130150212476.png" alt="image-20221130150212476"></p>
-<h2 id="内存基础知识汇总"><a href="#内存基础知识汇总" class="headerlink" title="内存基础知识汇总"></a>内存基础知识汇总</h2><p><img src="D:\笔记\照片\image-20221130153800230.png" alt="image-20221130153800230"></p>
+<p><img src="https://s2.loli.net/2024/02/24/16nYaGftzKX8lcr.png" alt="image-20221130145928135"></p>
+<p><img src="https://s2.loli.net/2024/02/24/MNs3D8GyOjbhK96.png" alt="image-20221130150212476"></p>
+<h2 id="内存基础知识汇总"><a href="#内存基础知识汇总" class="headerlink" title="内存基础知识汇总"></a>内存基础知识汇总</h2><p><img src="https://s2.loli.net/2024/02/24/LpR2X6fclgxDEVa.png" alt="image-20221130153800230"></p>
 <h2 id="内存管理-1"><a href="#内存管理-1" class="headerlink" title="内存管理"></a>内存管理</h2><p>操作系统对内存进行什么管理</p>
 <p><strong>1.操作系统负责内存空间的分配与回收</strong><br><strong>2.操作系统需要提供某种技术从逻辑.上对内存空间进行扩充</strong><br><strong>3.操作系统需要提供地址转换功能，负责程序的逻辑地址与物理地址的转换</strong></p>
-<p><img src="D:\笔记\照片\image-20221130154312685.png" alt="image-20221130154312685"></p>
+<p><img src="https://s2.loli.net/2024/02/24/k4NuSxRomsiwaOr.png" alt="image-20221130154312685"></p>
 <p>4.操作系统需要提供<strong>内存保护</strong>功能。保证各进程在各自存储空间内运行，互不干扰</p>
 <figure class="highlight x86asm"><table><tr><td class="code"><pre><code class="hljs x86asm">方法一:在<span class="hljs-meta">CPU</span>中设置- -对上、下限寄存器，存放进程的，上、下限地址。进程的指令要访问某个地址时，<span class="hljs-meta">CPU</span>检查是否越界。<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221130154628152.png" alt="image-20221130154628152"></p>
+<p><img src="https://s2.loli.net/2024/02/24/rse1qU7B4j3dA6w.png" alt="image-20221130154628152"></p>
 <figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">方法二:采用重定位寄存器<span class="hljs-comment">(又称基址寄存器)</span>和界地址寄存器<span class="hljs-comment">(又称限长寄存器)</span>进行越界检查。重定位寄存器中存放的是进程的起始物理地址。界地址寄存器中存放的是进程的最大逻辑地址。<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221130160104065.png" alt="image-20221130160104065"></p>
-<p><img src="D:\笔记\照片\image-20221130160300381.png" alt="image-20221130160300381"></p>
+<p><img src="https://s2.loli.net/2024/02/24/7DT5hrcPWXtNzwR.png" alt="image-20221130160104065"></p>
+<p><img src="https://s2.loli.net/2024/02/24/pO8J3YtcaiTx96A.png" alt="image-20221130160300381"></p>
 <h2 id="地址转换——覆盖与交换"><a href="#地址转换——覆盖与交换" class="headerlink" title="地址转换——覆盖与交换"></a>地址转换——覆盖与交换</h2><p>选择考察</p>
 <h3 id="覆盖"><a href="#覆盖" class="headerlink" title="覆盖"></a>覆盖</h3><p>覆盖技术的思想:将<strong>程序分为多个段</strong>(多个模块)。 常用的段常驻内存，不常用的段在需要时调入内存。</p>
 <p>内存中分为一个<strong>“固定区”和若干个“覆盖区”</strong>。<br>需要常驻内存的段放在“固定区”中，调入后就不再调出( 除非运行结束)</p>
 <p>不常用的段放在“覆盖区”,需要用到时调入内存，用不到时调出内存</p>
-<p><img src="D:\笔记\照片\image-20221130161149092.png" alt="image-20221130161149092"></p>
+<p><img src="https://s2.loli.net/2024/02/24/ng7OFqKCrtzL5u9.png" alt="image-20221130161149092"></p>
 <p><strong>必须由程序员声明覆盖结构</strong>，操作系统完成自动覆盖。</p>
 <p>缺点:<strong>对用户不透明</strong>，增加了用户编程负担。</p>
 <h3 id="交换"><a href="#交换" class="headerlink" title="交换"></a>交换</h3><p>交换(对换)技术的设计思想: 内存空间紧张时，系统将内存中某些进程暂时<strong>换出</strong>外存，把外存中某些已具备运行条件的进程<strong>换入</strong>内存(进程在内存与磁盘间动态调度)</p>
-<p><img src="D:\笔记\照片\image-20221130161937349.png" alt="image-20221130161937349"></p>
+<p><img src="https://s2.loli.net/2024/02/24/ROg2WZmkjhTaGbf.png" alt="image-20221130161937349"></p>
 <p><strong>三个问题</strong></p>
 <p>1.应该在外存(磁盘)的什么位置保存被换出的进程?<br>2.什么时候应该交换?<br>3.应该换出哪些进程?</p>
-<p><img src="D:\笔记\照片\image-20221130162428114.png" alt="image-20221130162428114"></p>
-<p><img src="D:\笔记\照片\image-20221130162527352.png" alt="image-20221130162527352"></p>
+<p><img src="https://s2.loli.net/2024/02/24/6GULa5m9fY32B4P.png" alt="image-20221130162428114"></p>
+<p><img src="https://s2.loli.net/2024/02/24/uSDaLHksYXA2v7R.png" alt="image-20221130162527352"></p>
 <h2 id="内存空间的分配与回收"><a href="#内存空间的分配与回收" class="headerlink" title="内存空间的分配与回收"></a>内存空间的分配与回收</h2><h2 id="连续分配管理方式"><a href="#连续分配管理方式" class="headerlink" title="连续分配管理方式"></a>连续分配管理方式</h2><p>连续分配:指为用户进程分配的必须是一个<strong>连续的内存空间</strong>。</p>
-<h3 id="单一连续分配"><a href="#单一连续分配" class="headerlink" title="单一连续分配"></a>单一连续分配</h3><p><img src="D:\笔记\照片\image-20221130164518034.png" alt="image-20221130164518034"></p>
+<h3 id="单一连续分配"><a href="#单一连续分配" class="headerlink" title="单一连续分配"></a>单一连续分配</h3><p><img src="https://s2.loli.net/2024/02/24/WXHGJOwYA8rv5Dg.png" alt="image-20221130164518034"></p>
 <h3 id="固定分区分配"><a href="#固定分区分配" class="headerlink" title="固定分区分配"></a>固定分区分配</h3><p><strong>分区大小相等</strong>:缺乏灵活性,但是很<strong>适合用于用一台计算机控制多个相同对象的场合</strong></p>
 <p><strong>分区大小不等</strong>:增加了灵活性，可以满足不同大小的进程需求。根据常在系统中运行的作业大小情况进行划分<br>(比如:划分多个小分区、适量中等分区、少量大分区) </p>
-<p><img src="D:\笔记\照片\image-20221130165350698.png" alt="image-20221130165350698"></p>
+<p><img src="https://s2.loli.net/2024/02/24/gOadCw5k3sjtvVy.png" alt="image-20221130165350698"></p>
 <p>问题 <strong>OS如何管理分区呢</strong></p>
 <p>操作系统需要建立一个数据结——<strong>分区说明表</strong>，来实现各个分区的分配与回<br>收。每个表项对应一个分区，通常按分区大小排列。每个表项包括对应分区的<br>**大小、起始地址、状态(**是否已分配)。 </p>
-<p><img src="D:\笔记\照片\image-20221130165551159.png" alt="image-20221130165551159"></p>
+<p><img src="https://s2.loli.net/2024/02/24/2vl8rKaP4D3nzk1.png" alt="image-20221130165551159"></p>
 <h3 id="动态分区分配"><a href="#动态分区分配" class="headerlink" title="动态分区分配"></a>动态分区分配</h3><p>动态分区分配又称为<strong>可变分区分配</strong>。</p>
 <p>这种分配方式不会预先划分内存分区，而是在进程装入内存时，根据<strong>进程的大小动态地建立分区</strong>，并使分区的大小正好适合进程的需要。</p>
 <p>因此系统分区的大小和数目是可变的。 (eg: 假设某计算机内存大小为64MB， 系统区8MB，用户区共56 M…)</p>
@@ -7963,7 +7963,7 @@
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">1.系统要用什么样的数据结构记录内存的使用情况?<br>2.当很多个空闲分区都能满足需求时，应该选择哪个分区进行分配?<br>3.如何进行分区的分配与回收操作?<br></code></pre></td></tr></table></figure>
 
 <h4 id="采用数据结构"><a href="#采用数据结构" class="headerlink" title="采用数据结构"></a>采用数据结构</h4><p>空闲分区表  或  空闲分区链</p>
-<p><img src="D:\笔记\照片\image-20221130170609765.png" alt="image-20221130170609765"></p>
+<p><img src="https://s2.loli.net/2024/02/24/a7hGBTZ9JsKluqv.png" alt="image-20221130170609765"></p>
 <h4 id="如何选择分区"><a href="#如何选择分区" class="headerlink" title="如何选择分区"></a>如何选择分区</h4><p>动态分区算法</p>
 <h4 id="如何分配与回收"><a href="#如何分配与回收" class="headerlink" title="如何分配与回收"></a>如何分配与回收</h4><ol>
 <li><p>采用 空闲分区表  分配之后有剩余修改空闲分区表大小 ，无剩余之后删除</p>
@@ -7975,34 +7975,34 @@
 </li>
 </ol>
 <h4 id="内外部碎片"><a href="#内外部碎片" class="headerlink" title="内外部碎片"></a>内外部碎片</h4><p>动态分区分配<strong>没有内部碎片，但是有外部碎片</strong>。<br><strong>内部碎片</strong>，分配给某进程的内存区域中，如果有些部分没有用上。<br><strong>外部碎片</strong>，是指内存中的某些空闲分区由于太小而难以利用。</p>
-<p><img src="D:\笔记\照片\image-20221130171602433.png" alt="image-20221130171602433"></p>
+<p><img src="https://s2.loli.net/2024/02/24/sJf1D8NErmwua2g.png" alt="image-20221130171602433"></p>
 <p>可以通过<strong>紧凑(拼凑，Compaction) 技术</strong>来解决外部碎片。</p>
-<p><img src="D:\笔记\照片\image-20221130171714345.png" alt="image-20221130171714345"></p>
-<h3 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h3><p><img src="D:\笔记\照片\image-20221130171822700.png" alt="image-20221130171822700"></p>
+<p><img src="https://s2.loli.net/2024/02/24/y3Iz6hxKqfVAQkr.png" alt="image-20221130171714345"></p>
+<h3 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h3><p><img src="https://s2.loli.net/2024/02/24/qsiTzCkKtGebIu8.png" alt="image-20221130171822700"></p>
 <h3 id="动态分区分配算法"><a href="#动态分区分配算法" class="headerlink" title="动态分区分配算法"></a>动态分区分配算法</h3><p>动态分区分配算法:在动态分区分配方式中，当很多个空闲分区都能满足需求时，应该选择哪个分区进行分配?</p>
-<p><img src="D:\笔记\照片\image-20221130172017556.png" alt="image-20221130172017556"></p>
+<p><img src="https://s2.loli.net/2024/02/24/n2B6pCNqOsE3xhR.png" alt="image-20221130172017556"></p>
 <h4 id="首次适应算法"><a href="#首次适应算法" class="headerlink" title="首次适应算法"></a>首次适应算法</h4><p>算法思想:每次都从低地址开始查找，找到第一一个能满足大小的空闲分区。<br>如何实现:<strong>空闲分区以地址递增的次序排列</strong>。每次分配内存时顺序查找<strong>空闲分区链</strong>(或空闲分区表)，找到大小能满足要求的第-一个空闲分区。</p>
-<p><img src="D:\笔记\照片\image-20221130172450938.png" alt="image-20221130172450938"></p>
+<p><img src="https://s2.loli.net/2024/02/24/1wgFRy3kYANotMn.png" alt="image-20221130172450938"></p>
 <h4 id="最佳适应算法"><a href="#最佳适应算法" class="headerlink" title="最佳适应算法"></a>最佳适应算法</h4><p>算法思想:由于动态分区分配是一种连续分配方式，为各进程分配的空间必须是连续的一整片区域。</p>
 <p>因此为了保证当“大进程”到来时能有连续的大片空间，可以尽可能多地留下大片的空闲区，即，优先使用更小的空闲区。</p>
 <p><strong>如何实现</strong>:<strong>空闲分区按容量递增次序链接</strong>。每次分配内存时顺序查找空闲分区链(或空闲分区表)，找到大小能满足要求的第一个空闲 分区。</p>
-<p><img src="D:\笔记\照片\image-20221130172842021.png" alt="image-20221130172842021"></p>
+<p><img src="https://s2.loli.net/2024/02/24/4RBlQSwEyW9hGYK.png" alt="image-20221130172842021"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">缺点 ： 产生很多外部碎片<br></code></pre></td></tr></table></figure>
 
 <h4 id="最坏适应算法"><a href="#最坏适应算法" class="headerlink" title="最坏适应算法"></a>最坏适应算法</h4><p><strong>最大适应算法</strong>(Largest Fit)<br>算法思想:为了解决最佳适应算法的问题—即留下太多难以利用的小碎片，可以在每次分配时优先使用最大的连续空闲区，这样分配后剩余的空闲区就不会太小，更方便使用。</p>
 <p>如何实现:<strong>空闲分区按容量递减次序链接</strong>。每次分配内存时顺序查找空闲分区链(或空闲分区表)，找到大小能满足要求的<strong>第一个空闲分区</strong>。</p>
-<p><img src="D:\笔记\照片\image-20221130173929487.png" alt="image-20221130173929487"></p>
+<p><img src="https://s2.loli.net/2024/02/24/TMyI21FgHb4ZDeh.png" alt="image-20221130173929487"></p>
 <p>缺点:每次都选最大的分区进行分配，虽然可以让分配后留下的空闲区更大，更可用，但是这种方式会导致<strong>较大的连续空闲区被迅速用完</strong>。如果之后有“大进程”到达，就没有内存分区可用了。</p>
 <h4 id="临近适应算法"><a href="#临近适应算法" class="headerlink" title="临近适应算法"></a>临近适应算法</h4><p>算法思想:首次适应算法每次都从链头开始查找的。这可能会导致低地址部分出现很多小的空闲分区，而每次分配查找时，都要经过这些分区，因此也增加了查找的开销。如果每次都从上次查找结束的位置开始检索，就能解决.上述问题。</p>
 <p>如何实现:<strong>空闲分区以地址递增的顺序排列</strong>(可排成-一个循环链表)。每次分配内存时<strong>从上次查找结束的位置开始查找****空闲分区链</strong>( 或空闲分区表)，找到大小能满足要求的第一个空闲分区。</p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">临近 和 首次 不需要对链表重新 排列所以开销较小<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221130174420265.png" alt="image-20221130174420265"></p>
+<p><img src="https://s2.loli.net/2024/02/24/ASprILqb9eXtcTy.png" alt="image-20221130174420265"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">临近 <br>优点 ： 开销小<br>缺点 ： 无大分区可用<br></code></pre></td></tr></table></figure>
 
 
 
-<h4 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h4><p><img src="D:\笔记\照片\image-20221130174439678.png" alt="image-20221130174439678"></p>
+<h4 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h4><p><img src="https://s2.loli.net/2024/02/24/Da4OBqZCinTJyGm.png" alt="image-20221130174439678"></p>
 <h2 id="非连续分配的管理方法"><a href="#非连续分配的管理方法" class="headerlink" title="非连续分配的管理方法"></a>非连续分配的管理方法</h2><h2 id="基本分页存储管理"><a href="#基本分页存储管理" class="headerlink" title="基本分页存储管理"></a>基本分页存储管理</h2><h3 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="页框"><a href="#页框" class="headerlink" title="页框"></a><strong>页框</strong></h4><p>将内存空间分为一个个<strong>大小相等的分区</strong>( 比如:每个分区4KB)，<strong>每个分区就是一个“页框”</strong></p>
 <p>(**页框&#x3D; 页帧&#x3D;内存块&#x3D;物理块&#x3D;物理页面)**。</p>
 <p>每个页框有一个编号，即“页框号”<br>(页框号&#x3D;页帧号&#x3D;内存块号&#x3D;物理块号&#x3D;物理页号)，<br>页框号从0开始。</p>
@@ -8010,13 +8010,13 @@
 <p><strong>操作系统以页框为单位为各个进程分配内存空间</strong>。<br>进程的每个页面分别放入一个页框中。<br><strong>进程的页面与内存的页框有一一对应的关系</strong></p>
 <p>各个页面不必连续存放，可以放到不相邻的各个页框中。</p>
 <h4 id="页表"><a href="#页表" class="headerlink" title="页表"></a>页表</h4><p>为了能知道进程的每个页面在内存中存放的位置，操作系统要为每个进程建立一张页表。 .<br>注:页表通常存在PCB (进程控制块)中</p>
-<p><img src="D:\笔记\照片\image-20221219224331039.png" alt="image-20221219224331039"></p>
+<p><img src="https://s2.loli.net/2024/02/24/SDRkjoGtYz1wnvc.png" alt="image-20221219224331039"></p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><code class="hljs ruby"><span class="hljs-number">1</span>.每个页表项多大<span class="hljs-string">?占</span>几个字节?<br><span class="hljs-number">2</span>.如何通过页表实现逻辑地址到物理地址的转换?<br></code></pre></td></tr></table></figure>
 
 <p>块号占多少内存计算</p>
-<p><img src="D:\笔记\照片\image-20221219225205773.png" alt="image-20221219225205773"></p>
+<p><img src="https://s2.loli.net/2024/02/24/OsqTVPiMutf1Zaw.png" alt="image-20221219225205773"></p>
 <p>页号 不占存储空间<br>页表项是连续存放的，页号是隐含的，不占存储空间（类比数组）</p>
-<p><img src="D:\笔记\照片\image-20221219225504874.png" alt="image-20221219225504874"></p>
+<p><img src="https://s2.loli.net/2024/02/24/oTgmOLFhYafWAdJ.png" alt="image-20221219225504874"></p>
 <p><em><em>由于页号是隐含的，因此每个页表项占3B，存储整个页表至少需要3</em>(n+1)B</em>*</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown">注意:页表记录的只是内存块号，而不是内存块的起始地址!<br><span class="hljs-code">	J号内存块的起始地址=J*内存块大小</span><br><span class="hljs-code"></span><br></code></pre></td></tr></table></figure>
 
@@ -8026,32 +8026,32 @@
 
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">2.如何通过页表实现逻辑地址到物理地址的转换?<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20221219230030729.png" alt="image-20221219230030729"></p>
+<p><img src="https://s2.loli.net/2024/02/24/gnfEsWv2aSAKrJ7.png" alt="image-20221219230030729"></p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">如何确定一个逻辑地址对应的页号 与 页内偏移量<br></code></pre></td></tr></table></figure>
 
 <p><strong>页号&#x3D;逻辑地址&#x2F;页面长度(取除法的整数部分)</strong><br><strong>页内偏移量&#x3D;逻辑地址%页面长度(取除法的余数部分)</strong></p>
-<p><img src="D:\笔记\照片\image-20221219230404416.png" alt="image-20221219230404416"></p>
+<p><img src="https://s2.loli.net/2024/02/24/UlXzN35snGCkr4K.png" alt="image-20221219230404416"></p>
 <p>结论:如果每个页面大小为2KB，用二进制数表示逻辑地址，则末尾K位即为页内<br>偏移量，其余部分就是页号</p>
-<p><img src="D:\笔记\照片\image-20221219231002684.png" alt="image-20221219231002684"></p>
-<h4 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h4><p><img src="D:\笔记\照片\image-20221219231100546.png" alt="image-20221219231100546"></p>
+<p><img src="https://s2.loli.net/2024/02/24/dYBkA3PbyOXnSDG.png" alt="image-20221219231002684"></p>
+<h4 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h4><p><img src="https://s2.loli.net/2024/02/24/mihbWpKo5yeQPEf.png" alt="image-20221219231100546"></p>
 <h3 id="基本地址变换机构"><a href="#基本地址变换机构" class="headerlink" title="基本地址变换机构"></a>基本地址变换机构</h3><p>基本地址变换机构(<strong>用于实现逻辑地址到物理地址转换的一组硬件机构</strong>)</p>
-<p><img src="D:\笔记\照片\image-20230305113912543.png" alt="image-20230305113912543"></p>
-<p><img src="D:\笔记\照片\image-20230305115047616.png" alt="image-20230305115047616"></p>
+<p><img src="https://s2.loli.net/2024/02/24/V6ATChRfoINaOmW.png" alt="image-20230305113912543"></p>
+<p><img src="https://s2.loli.net/2024/02/24/QgJzX9lxv8osFwZ.png" alt="image-20230305115047616"></p>
 <h3 id="快表地址变换机构"><a href="#快表地址变换机构" class="headerlink" title="快表地址变换机构"></a>快表地址变换机构</h3><p>未看</p>
-<h3 id="两级页表"><a href="#两级页表" class="headerlink" title="两级页表"></a>两级页表</h3><h2 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h2><p><img src="D:\笔记\照片\image-20230305142516494.png" alt="image-20230305142516494"></p>
-<p><img src="D:\笔记\照片\image-20230305142533378.png" alt="image-20230305142533378"></p>
-<p><img src="D:\笔记\照片\image-20230305145315763.png" alt="image-20230305145315763"></p>
-<h3 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h3><p><img src="D:\笔记\照片\image-20230305145448022.png" alt="image-20230305145448022"></p>
+<h3 id="两级页表"><a href="#两级页表" class="headerlink" title="两级页表"></a>两级页表</h3><h2 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h2><p><img src="https://s2.loli.net/2024/02/24/NaoEi6OtRpFgwvH.png" alt="image-20230305142516494"></p>
+<p><img src="https://s2.loli.net/2024/02/24/P2wU8IaudvKCF6T.png" alt="image-20230305142533378"></p>
+<p><img src="https://s2.loli.net/2024/02/24/gsA8n9WxySUBMfL.png" alt="image-20230305145315763"></p>
+<h3 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h3><p><img src="https://s2.loli.net/2024/02/24/S3hZkHw5vzDA6cO.png" alt="image-20230305145448022"></p>
 <p>最佳置换算法(OPT，Optimal) :每次选择淘汰的页面将是以后永不使用，或者在最长时间内不再被<br>访问的页面，这样可以保证最低的缺页率。</p>
 <p>理想情况操作系统无法预知访问页面的顺序所以无法实现</p>
-<p><img src="D:\笔记\照片\image-20230305145745741.png" alt="image-20230305145745741"></p>
+<p><img src="https://s2.loli.net/2024/02/24/Ulf1aonNVFgIsS2.png" alt="image-20230305145745741"></p>
 <p><strong>先进先出置换算法(FIFO)</strong> :每次选择淘汰的页面是最早进入内存的页面<br>实现方法:把调入内存的页面根据调入的先后顺序排成-一个队列，需要换出页面时选择队头频面即可。<br>队列的最大长度取决于系统为进程分配了多少个内存块。<br>队列的最大长度取决于操作系统为进程分配多少内存块</p>
-<p><img src="D:\笔记\照片\image-20230305150216474.png" alt="image-20230305150216474"></p>
+<p><img src="https://s2.loli.net/2024/02/24/UTPCR9eAxM1E6zG.png" alt="image-20230305150216474"></p>
 <p><strong>最近最久未使用置换算法(LRU，least recently used)</strong> :每次淘汰的页面是最近最久未使用的页面<br>实现方法:赋予每个页面对应的页表项中，用<strong>访间字段记录该页面自上次被访问以来所经历的时间t</strong>。<br>当需要淘汰-一个页面时，选择现有页面中t值最大的，即最近最久未使用的页面。</p>
-<p><img src="D:\笔记\照片\image-20230305150416277.png" alt="image-20230305150416277"></p>
+<p><img src="https://s2.loli.net/2024/02/24/Cwel7ZNLzH86YyV.png" alt="image-20230305150416277"></p>
 <p>最佳置换算法性能最好，但无法实现;先进先出置换算法实现简单，但算法性能差;最近最久未使用<br>置换算法性能好，是最接近OPT算法性能的，但是实现起来需要专门的硬件支持，算法开销大。<br>时钟置换算法是一种性能和开销较均衡的算法，又称CLOCK算法，或最近未用算法(NRU，Not<br>Recently Used )</p>
-<p><img src="D:\笔记\照片\image-20230305151238194.png" alt="image-20230305151238194"></p>
-<h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><p><img src="D:\笔记\照片\image-20230305164651482.png" alt="image-20230305164651482"></p>
+<p><img src="https://s2.loli.net/2024/02/24/Vvol4DNdXWRGjuY.png" alt="image-20230305151238194"></p>
+<h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><p><img src="https://s2.loli.net/2024/02/24/Ru49MwDIxAriByg.png" alt="image-20230305164651482"></p>
 ]]></content>
       <tags>
         <tag>操作系统</tag>
@@ -8083,16 +8083,16 @@
 <li>5.指令在存储器中按执行顺序存放， 由指令计数器(即程序计数器PC)指明要执行的指令所在的储存单元地址，一般按顺序递增，但可按运算结果或外界条件而改变</li>
 <li>6.机器<strong>以运算器为中心</strong>，输入输出设备与存储器间的数据传送都通过运算器</li>
 </ul>
-<p><img src="D:\笔记\照片\image-20220901221206217.png" alt="image-20220901221206217"></p>
+<p><img src="https://s2.loli.net/2024/02/24/z3954tXTOyf8EGF.png" alt="image-20220901221206217"></p>
 <p>eg.对于乘法运算，可以设计一个专门的硬件电路实现乘法运算<br>        也可以用软件的方式，执行多次加法运算来实现~</p>
 <h3 id="现代计算机结构"><a href="#现代计算机结构" class="headerlink" title="现代计算机结构"></a>现代计算机结构</h3><p>现代计算机：<strong>以存储器为核心</strong></p>
-<p><img src="D:\笔记\照片\image-20220901221856500.png" alt="image-20220901221856500"></p>
+<p><img src="https://s2.loli.net/2024/02/24/iTEdJc3jU5W4lRg.png" alt="image-20220901221856500"></p>
 <p>运算器+ 控制器 整合为 CPU 后</p>
-<p><img src="D:\笔记\照片\image-20220901222423074.png" alt="image-20220901222423074"></p>
+<p><img src="https://s2.loli.net/2024/02/24/m8TQr1uV7EwBGv9.png" alt="image-20220901222423074"></p>
 <p><strong>主存</strong>——一般指 运行内存</p>
 <p><strong>辅存</strong>——一般指 存储内存，属于I&#x2F;O设备</p>
 <p>章节总结</p>
-<p><img src="D:\笔记\照片\image-20220901222648232.png" alt="image-20220901222648232"></p>
+<p><img src="https://s2.loli.net/2024/02/24/InDaxd1BjuWGQhU.png" alt="image-20220901222648232"></p>
 <h3 id="各硬件组成"><a href="#各硬件组成" class="headerlink" title="各硬件组成"></a>各硬件组成</h3><h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><p>主存储器 由三个部分组成</p>
 <ol>
 <li>存储体</li>
@@ -8107,32 +8107,32 @@
 <p>存储体 被 分为若干个存储单元，每个存储单元存放一串二进制代码，这个二进制代码被称为存储字，存储字包含多少个二进制代码的长度被称为存储字长（8bit 的整数被） 没过存储单元对应一个地址</p>
 <figure class="highlight makefile"><table><tr><td class="code"><pre><code class="hljs makefile">存储单元：每个存储单元存放一-串二进制代码<br><span class="hljs-section">存储字(word):存储单元中二进制代码的组合</span><br><span class="hljs-section">存储字长:存储单元中二进制代码的位数</span><br>存储元：即存储二进制的电子元件，每个存储元可有1bit<br><br>MAR位数反应存储单元的个数<br>MDR位数 = 存储字长<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220902212121705.png" alt="image-20220902212121705"></p>
+<p><img src="https://s2.loli.net/2024/02/24/EpudmeviFMJyjGQ.png" alt="image-20220902212121705"></p>
 <h4 id="运算器的基本组成"><a href="#运算器的基本组成" class="headerlink" title="运算器的基本组成"></a>运算器的基本组成</h4><p>运算器:用于实现算术运算(如:加减乘除)、逻辑运算(如:与或非)</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++">ACC 累加器， 用于存放操作数，或运算结果。<br>MQ：乘商寄存器，在乘、除运算时，用于存放操作数或运算结果。<br>X：通用的操作数寄存器，用于存放操作数<br><span class="hljs-string">&#x27;ALU：算术逻辑单元&#x27;</span>，通过内部复杂的电路实现算数运算、逻辑运算<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220902212649523.png" alt="image-20220902212649523"></p>
+<p><img src="https://s2.loli.net/2024/02/24/WIolhsPSEkGuR5g.png" alt="image-20220902212649523"></p>
 <h4 id="控制器的基本组成"><a href="#控制器的基本组成" class="headerlink" title="控制器的基本组成"></a>控制器的基本组成</h4><figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-string">&#x27;CU：控制单元，分析指令，给出控制信号&#x27;</span><br>IR: 指令寄存器，存放当前执行的指令<br>PC: 程序计数器，存放下一-条指令地址，有自动加<span class="hljs-number">1</span>功能<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220902212931001.png" alt="image-20220902212931001"></p>
+<p><img src="https://s2.loli.net/2024/02/24/dO1xmWnZNSX6pH7.png" alt="image-20220902212931001"></p>
 <p>完成一条指令：</p>
-<p><img src="D:\笔记\照片\image-20220902213037787.png" alt="image-20220902213037787"></p>
-<h3 id="计算机的工做过程"><a href="#计算机的工做过程" class="headerlink" title="计算机的工做过程"></a>计算机的工做过程</h3><p><img src="D:\笔记\照片\image-20220902213952724.png" alt="image-20220902213952724"></p>
-<p><img src="D:\笔记\照片\image-20220902214249604.png" alt="image-20220902214249604"></p>
-<p> <img src="D:\笔记\照片\image-20220902214541273.png" alt="image-20220902214541273"></p>
-<p><img src="D:\笔记\照片\image-20220902214733385.png" alt="image-20220902214733385"></p>
-<p><img src="D:\笔记\照片\image-20220902214824161.png" alt="image-20220902214824161"></p>
+<p><img src="https://s2.loli.net/2024/02/24/YDTPK2pS8rgmyRo.png" alt="image-20220902213037787"></p>
+<h3 id="计算机的工做过程"><a href="#计算机的工做过程" class="headerlink" title="计算机的工做过程"></a>计算机的工做过程</h3><p><img src="https://s2.loli.net/2024/02/24/upD6rCzRe1P3wEI.png" alt="image-20220902213952724"></p>
+<p><img src="https://s2.loli.net/2024/02/24/NgAPfXWKJypRhSO.png" alt="image-20220902214249604"></p>
+<p> <img src="https://s2.loli.net/2024/02/24/Q3NkDbI4qV7Leou.png" alt="image-20220902214541273"></p>
+<p><img src="https://s2.loli.net/2024/02/24/c9BhSPWKiTGHC5E.png" alt="image-20220902214733385"></p>
+<p><img src="https://s2.loli.net/2024/02/24/OxoGUzaQt8jl1bh.png" alt="image-20220902214824161"></p>
 <p><strong>总结步骤</strong></p>
 <p>前5步 取指令 过程都一样 CU分析指令之后才会又不一样的操作</p>
-<p><img src="D:\笔记\照片\image-20220902215019599.png" alt="image-20220902215019599"></p>
+<p><img src="https://s2.loli.net/2024/02/24/c2Re68LNVSnfiC3.png" alt="image-20220902215019599"></p>
 <p>章节总结：</p>
-<p><img src="D:\笔记\照片\image-20220902215152438.png" alt="image-20220902215152438"></p>
+<p><img src="https://s2.loli.net/2024/02/24/2iTSFfd65HbarcZ.png" alt="image-20220902215152438"></p>
 <h3 id="计算机系统的层次结构"><a href="#计算机系统的层次结构" class="headerlink" title="计算机系统的层次结构"></a>计算机系统的层次结构</h3><p>5层结构</p>
-<p><img src="D:\笔记\照片\image-20220902220001134.png" alt="image-20220902220001134"></p>
+<p><img src="https://s2.loli.net/2024/02/24/62I3N5E8KB4YPuk.png" alt="image-20220902220001134"></p>
 <p>不同级别的语言</p>
-<p><img src="D:\笔记\照片\image-20220902220424798.png" alt="image-20220902220424798"></p>
+<p><img src="https://s2.loli.net/2024/02/24/59wFnr1RIjYKVX2.png" alt="image-20220902220424798"></p>
 <p>·	</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="D:\笔记\照片\image-20220902220515048.png" alt="image-20220902220515048"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="https://s2.loli.net/2024/02/24/kIBVh4CjJ2vtZLf.png" alt="image-20220902220515048"></p>
 <h2 id="计算机性能指标"><a href="#计算机性能指标" class="headerlink" title="计算机性能指标"></a>计算机性能指标</h2><ol>
 <li>机器字长 CPU 一次能处理数据的位数 与 CPU中的寄存器位数有关</li>
 <li>运算速度 主频 吉普森法 MIPS CPI FLOPS</li>
@@ -8141,12 +8141,12 @@
 
 <h3 id="CPU的性能指标"><a href="#CPU的性能指标" class="headerlink" title="CPU的性能指标"></a>CPU的性能指标</h3><figure class="highlight x86asm"><table><tr><td class="code"><pre><code class="hljs x86asm"><span class="hljs-meta">CPU</span>主频: <span class="hljs-meta">CPU</span>内 数字咏冲信号振荡的频率。  <span class="hljs-number">3.</span>6GHZ<br><br><span class="hljs-meta">CPU</span>主频（时钟频率） = <span class="hljs-number">1</span>/<span class="hljs-meta">CPU</span>时钟周期  <br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220902230652481.png" alt="image-20220902230652481"></p>
+<p><img src="https://s2.loli.net/2024/02/24/dbxJEP9jQBKfZT2.png" alt="image-20220902230652481"></p>
 <p><strong>执行一条指令的耗时 &#x3D; CPI x CPU 时钟周期</strong></p>
 <p><strong>CPU执行时间(整个程序的耗时）&#x3D; CPU时钟周期数&#x2F;主频 &#x3D; (指令条数*CPI)&#x2F;主频</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++">IPS : 每秒执行多少条指令  <span class="hljs-string">&quot;IPS = 主频 / 平均CPI&quot;</span><br>FLOPS ： 每秒执行多少次浮点运算<br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220902231302196.png" alt="image-20220902231302196"></p>
+<p><img src="https://s2.loli.net/2024/02/24/JPuRKi5zcYoGUt7.png" alt="image-20220902231302196"></p>
 <h3 id="系统整体的性能指标"><a href="#系统整体的性能指标" class="headerlink" title="系统整体的性能指标"></a>系统整体的性能指标</h3><ol>
 <li><strong>数据通路带宽</strong>——数据总线一次所能并行传送信息的位数(各硬件部件通过数据总线传输数据)</li>
 <li><strong>吞吐量</strong>——指系统在单位时间内处理请求的数量。</li>
@@ -8154,30 +8154,30 @@
 </ol>
 <p><strong>基准程序</strong>是用来测量计算机处理速度的一种实用程序，以便于被测量的计算机性能可以与运行相同程序的其它计算机性能进行比较。</p>
 <p>基准程序——跑分软件 </p>
-<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p><img src="D:\笔记\照片\image-20220902231949381.png" alt="image-20220902231949381"></p>
-<h3 id="计算机层次结构"><a href="#计算机层次结构" class="headerlink" title="计算机层次结构"></a>计算机层次结构</h3><p><img src="D:\笔记\照片\image-20220907110019173.png" alt="image-20220907110019173"></p>
-<h1 id="数据的表示和运算"><a href="#数据的表示和运算" class="headerlink" title="数据的表示和运算"></a>数据的表示和运算</h1><h2 id="数值与编码"><a href="#数值与编码" class="headerlink" title="数值与编码"></a>数值与编码</h2><h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><p><img src="D:\笔记\照片\image-20220904144059774.png" alt="image-20220904144059774"></p>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p><img src="https://s2.loli.net/2024/02/24/MUvHrB4ySow5tFk.png" alt="image-20220902231949381"></p>
+<h3 id="计算机层次结构"><a href="#计算机层次结构" class="headerlink" title="计算机层次结构"></a>计算机层次结构</h3><p><img src="https://s2.loli.net/2024/02/24/imgTbxX9fvSMNcJ.png" alt="image-20220907110019173"></p>
+<h1 id="数据的表示和运算"><a href="#数据的表示和运算" class="headerlink" title="数据的表示和运算"></a>数据的表示和运算</h1><h2 id="数值与编码"><a href="#数值与编码" class="headerlink" title="数值与编码"></a>数值与编码</h2><h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><p><img src="https://s2.loli.net/2024/02/24/ySWP5e1L6q9FaRt.png" alt="image-20220904144059774"></p>
 <h3 id="BCD码"><a href="#BCD码" class="headerlink" title="BCD码"></a>BCD码</h3><p>使用2进制 对应 10进制的数</p>
 <h4 id="8421码"><a href="#8421码" class="headerlink" title="8421码"></a><strong>8421码</strong></h4><p>2进制表示 10进制数</p>
-<p><img src="D:\笔记\照片\image-20220904145218167.png" alt="image-20220904145218167"></p>
+<p><img src="https://s2.loli.net/2024/02/24/e6Jd8kB7c9PpmQC.png" alt="image-20220904145218167"></p>
 <p>8421 没一位都有固定权值 <strong>有权码</strong></p>
 <h4 id="余3码"><a href="#余3码" class="headerlink" title="余3码"></a>余3码</h4><p>在8421的基础上 加 3</p>
 <p>8421 + （0011）</p>
-<p><img src="D:\笔记\照片\image-20220904145407858.png" alt="image-20220904145407858"></p>
+<p><img src="https://s2.loli.net/2024/02/24/8Ljty6wI5aDfdSn.png" alt="image-20220904145407858"></p>
 <p>余3码 无权码</p>
-<h4 id="2421码"><a href="#2421码" class="headerlink" title="2421码"></a>2421码</h4><p> <img src="D:\笔记\照片\image-20220904145642009.png" alt="image-20220904145642009"></p>
-<h4 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h4><p><img src="D:\笔记\照片\image-20220904145657021.png" alt="image-20220904145657021"></p>
-<h3 id="字符与字符串"><a href="#字符与字符串" class="headerlink" title="字符与字符串"></a>字符与字符串</h3><p><img src="D:\笔记\照片\image-20220904152456220.png" alt="image-20220904152456220"></p>
+<h4 id="2421码"><a href="#2421码" class="headerlink" title="2421码"></a>2421码</h4><p> <img src="https://s2.loli.net/2024/02/24/ButpbLYs82e3lTc.png" alt="image-20220904145642009"></p>
+<h4 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h4><p><img src="https://s2.loli.net/2024/02/24/EYrRmSbX65KaxWA.png" alt="image-20220904145657021"></p>
+<h3 id="字符与字符串"><a href="#字符与字符串" class="headerlink" title="字符与字符串"></a>字符与字符串</h3><p><img src="https://s2.loli.net/2024/02/24/Txr9bc31p5OVnI4.png" alt="image-20220904152456220"></p>
 <h3 id="奇偶校验"><a href="#奇偶校验" class="headerlink" title="奇偶校验"></a>奇偶校验</h3><p>奇校验码:整个校验码(有效信息位和校验位)中“1” 的个数为奇数。</p>
 <p>偶校验码:整个校验码(有效信息位和校验位)中“1”的个数为偶数。</p>
-<p><img src="D:\笔记\照片\image-20220914194120091.png" alt="image-20220914194120091"></p>
+<p><img src="https://s2.loli.net/2024/02/24/xri4tazCRukmbVq.png" alt="image-20220914194120091"></p>
 <h3 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h3><p> 基本思想</p>
 <p>海明码设计思路：将信息位分组进行偶校验- -&gt;多个校验位- -&gt;多个校验位标注出错位置</p>
 <p><strong>确认校验位 : 2^k &gt;&#x3D;  k + n + 1</strong> </p>
-<p><img src="D:\笔记\照片\image-20220914203719685.png" alt="image-20220914203719685"></p>
-<p><img src="D:\笔记\照片\image-20220914221322333.png" alt="image-20220914221322333"></p>
+<p><img src="https://s2.loli.net/2024/02/24/EMsTtDz5XSadunP.png" alt="image-20220914203719685"></p>
+<p><img src="https://s2.loli.net/2024/02/24/fdAbOVxM5PJIGol.png" alt="image-20220914221322333"></p>
 <p>海明码 1bit位 纠错能力， 2bit 检错能力</p>
-<p><img src="D:\笔记\照片\image-20220914222547004.png" alt="image-20220914222547004"></p>
+<p><img src="https://s2.loli.net/2024/02/24/czikOym89MnYsxI.png" alt="image-20220914222547004"></p>
 <h3 id="CRC-循环冗余校验码"><a href="#CRC-循环冗余校验码" class="headerlink" title="CRC 循环冗余校验码"></a>CRC 循环冗余校验码</h3><h2 id="定点数"><a href="#定点数" class="headerlink" title="定点数"></a>定点数</h2><p>定点数:小数点的位置固定 			   Eg: 996.007			 	一一常规计数<br>浮点数:小数点的位置不固定			Eg: 9.96007*102		——科学计数法</p>
 <h3 id="定点数的表示"><a href="#定点数的表示" class="headerlink" title="定点数的表示"></a>定点数的表示</h3><p><strong>无符号数</strong> :整个机器字长的全部二进制位均为数值位，没有符号位，相当于数的绝对值。</p>
 <p>通常只有无符号整数，没有无符号小数</p>
@@ -8186,9 +8186,9 @@
 <li>定点整数</li>
 <li>定点小数</li>
 </ol>
-<p><img src="D:\笔记\照片\image-20220918145613953.png" alt=" "></p>
+<p><img src="https://s2.loli.net/2024/02/24/T9I7pafqkL8JbFo.png" alt=" "></p>
 <h3 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h3><p>原码：用尾数表示真值的绝对值，符号位“0&#x2F;1” 对应“正&#x2F;负”</p>
-<p><img src="D:\笔记\照片\image-20220918150046617.png" alt="image-20220918150046617"></p>
+<p><img src="https://s2.loli.net/2024/02/24/IAZSUm231VFLkcM.png" alt="image-20220918150046617"></p>
 <ul>
 <li><p>若机器字长n+1位，<strong>原码整数表示范围 ： -(2^n - 1)  &lt;&#x3D; x &lt;&#x3D; 2^n - 1</strong></p>
 </li>
@@ -8201,7 +8201,7 @@
 <p>​	若符号位为0，则反码与原码相同<br>​	<strong>若符号位为1，则数值位全部取反</strong></p>
 <figure class="highlight dns"><table><tr><td class="code"><pre><code class="hljs dns">x= + <span class="hljs-number">19</span>D	原码 = <span class="hljs-number">0,0010011</span><br>			反码 = <span class="hljs-number">0,0010011</span><br>		<br>x = -<span class="hljs-number">19</span>D 	原码 = <span class="hljs-number">1,0010011</span><br>			反码 = <span class="hljs-number">1,1101100</span><br>			<br>X= +<span class="hljs-number">0</span>.<span class="hljs-number">75</span>D	原码= <span class="hljs-number">0.1100000</span><br>			反码= <span class="hljs-number">0.1100000</span><br><br>x=-<span class="hljs-number">0</span>.<span class="hljs-number">75</span>D	原码= <span class="hljs-number">1.1100000</span><br>			反码= <span class="hljs-number">1.0011111</span><br><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220918151016343.png" alt="image-20220918151016343"></p>
+<p><img src="https://s2.loli.net/2024/02/24/VFmHAzfo6pPNXkR.png" alt="image-20220918151016343"></p>
 <p>反码”只是“原码”转变为补码”的一个中间状态，实际中并没什么卵用</p>
 <h3 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h3><p>补码：</p>
 <p>​			正数的补码 &#x3D; 原码</p>
@@ -8210,7 +8210,7 @@
 
 <p><strong>注意!补码的真值0只有一种表示形式</strong></p>
 <p>-0 的反码 11111111 加 1之后 得到10000000 由于只有8bit 所以最高位会丢弃，仍为全0</p>
-<p><img src="D:\笔记\照片\image-20220918151906030.png" alt="image-20220918151906030"></p>
+<p><img src="https://s2.loli.net/2024/02/24/IuNVFHpqn3d1Uzg.png" alt="image-20220918151906030"></p>
 <p><strong>多的那个数 是因为 0只有一种表示方法， 所以可以多表示一位</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++">						补码		原码			   <br>x=<span class="hljs-number">0.0000</span>[+<span class="hljs-number">0</span>]补=|<span class="hljs-number">-0</span>]补	   <span class="hljs-number">0.0000</span> 	<span class="hljs-number">0.0000</span><br>X=<span class="hljs-number">0.0000</span>				<span class="hljs-number">0.0000</span>	 <span class="hljs-number">1.0000</span><br>x=<span class="hljs-number">-1.0000</span>				<span class="hljs-number">1.0000</span>	 不能表示<br><br></code></pre></td></tr></table></figure>
 
@@ -8229,7 +8229,7 @@
 <p>补码移码 一一对应</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><code class="hljs c++">X= +<span class="hljs-number">19</span>D<br>            [x]原=<span class="hljs-number">0</span>,<span class="hljs-number">0010011</span><br>            [x]反=<span class="hljs-number">0</span>,<span class="hljs-number">0010011</span><br>            [x]补=<span class="hljs-number">0</span>,<span class="hljs-number">0010011</span><br>            [x]移=<span class="hljs-number">1</span>,<span class="hljs-number">0010011</span><br>x=<span class="hljs-number">-19</span>D<br>            [x]原=<span class="hljs-number">1</span>,<span class="hljs-number">0010011</span><br>            [x]反=<span class="hljs-number">1</span>,<span class="hljs-number">1101100</span><br>            [x]补=<span class="hljs-number">1</span>,<span class="hljs-number">1101101</span><br>            [x]移=<span class="hljs-number">0</span>,<span class="hljs-number">1101101</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="D:\笔记\照片\image-20220918152517103.png" alt="image-20220918152517103"></p>
+<p><img src="https://s2.loli.net/2024/02/24/ksGACEgqLcSHiRK.png" alt="image-20220918152517103"></p>
 <p>移码作用 ： 可以很方便的比较叫大小 <strong>从8位全0 到8位全1递增 -128~127</strong></p>
 <h2 id="定点数的表示和运算"><a href="#定点数的表示和运算" class="headerlink" title="定点数的表示和运算"></a>定点数的表示和运算</h2><h3 id="移位运算！！"><a href="#移位运算！！" class="headerlink" title="移位运算！！"></a>移位运算！！</h3><ol>
 <li><p>原码的算数移位——符号位保持不变，仅对数值位进行移位。</p>
@@ -8254,8 +8254,8 @@
 <p>左移相当于X2;右移相当于+2<br>由于位数有限，因此有时候无法用算数移位精确地等效乘除法</p>
 <h3 id="逻辑移位"><a href="#逻辑移位" class="headerlink" title="逻辑移位"></a>逻辑移位</h3><p>逻辑右移:高位补0，低位舍弃。<br>逻辑左移:低位补0，高位舍弃。</p>
 <p><strong>可以把逻辑移位看作是对“无符号数”的算数移位</strong></p>
-<h3 id="循环移位"><a href="#循环移位" class="headerlink" title="循环移位"></a>循环移位</h3><p><img src="D:\笔记\照片\image-20220920165740783.png" alt="image-20220920165740783"></p>
-<h3 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h3><p><img src="D:\笔记\照片\image-20220920165912529.png" alt="image-20220920165912529"></p>
+<h3 id="循环移位"><a href="#循环移位" class="headerlink" title="循环移位"></a>循环移位</h3><p><img src="https://s2.loli.net/2024/02/24/mwMqbshoIPNcOEv.png" alt="image-20220920165740783"></p>
+<h3 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h3><p><img src="https://s2.loli.net/2024/02/24/g7HtAuYG4Wf2BV9.png" alt="image-20220920165912529"></p>
 <h3 id="加减运算！！"><a href="#加减运算！！" class="headerlink" title="加减运算！！"></a>加减运算！！</h3><p>原码的加法运算:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">正+正		-》绝对值做加法，结果为正<br>负+负		-》绝对值做加法，结果为负<br>正+负		-》绝对值大的减绝对值小的，符号同绝对值大的数<br>负+正		-》绝对值大的减绝对值小的，符号同绝对值大的数<br></code></pre></td></tr></table></figure>
 
@@ -8269,23 +8269,23 @@
 <h4 id="溢出判断"><a href="#溢出判断" class="headerlink" title="溢出判断"></a>溢出判断</h4><p>只有“正数+正数”才会<strong>上溢</strong>——正+正&#x3D;负<br>只有“负数+负数”才会<strong>下溢</strong>——负+负&#x3D;						正</p>
 <p><strong>方法一:采用一位符号位，</strong></p>
 <p>设A的符号为As，B的符号为Bs,运算结果的符号为Ss,则溢出逻辑表达式</p>
-<p><img src="D:\笔记\照片\image-20220920171858734.png" alt="image-20220920171858734"><br>若V&#x3D;0, 表示无溢出;<br>若V&#x3D;1,表示有溢出。</p>
-<p><img src="D:\笔记\照片\image-20220920172427404.png" alt="image-20220920172427404"> </p>
+<p><img src="https://s2.loli.net/2024/02/24/soInYyDEqM7J9X5.png" alt="image-20220920171858734"><br>若V&#x3D;0, 表示无溢出;<br>若V&#x3D;1,表示有溢出。</p>
+<p><img src="https://s2.loli.net/2024/02/24/lBRA97ucpCnG5sb.png" alt="image-20220920172427404"> </p>
 <p><strong>方法二</strong></p>
-<p><img src="D:\笔记\照片\image-20220920172725177.png" alt="image-20220920172725177"></p>
+<p><img src="https://s2.loli.net/2024/02/24/nMQAD4xScOy6vaE.png" alt="image-20220920172725177"></p>
 <p><strong>方法三!!!</strong></p>
-<p><img src="D:\笔记\照片\image-20220920172949068.png" alt="image-20220920172949068"></p>
-<h4 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h4><p><img src="D:\笔记\照片\image-20220920173347498.png" alt="image-20220920173347498"></p>
-<h3 id="乘法运算"><a href="#乘法运算" class="headerlink" title="乘法运算"></a>乘法运算</h3><h4 id="原码乘法"><a href="#原码乘法" class="headerlink" title="原码乘法"></a>原码乘法</h4><p><img src="D:\笔记\照片\image-20220920204056891.png" alt="image-20220920204056891"></p>
+<p><img src="https://s2.loli.net/2024/02/24/7MzZ43ne8ckNDBu.png" alt="image-20220920172949068"></p>
+<h4 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h4><p><img src="https://s2.loli.net/2024/02/24/9iqnl4LIyj1otDs.png" alt="image-20220920173347498"></p>
+<h3 id="乘法运算"><a href="#乘法运算" class="headerlink" title="乘法运算"></a>乘法运算</h3><h4 id="原码乘法"><a href="#原码乘法" class="headerlink" title="原码乘法"></a>原码乘法</h4><p><img src="https://s2.loli.net/2024/02/24/Vo3QvZt4NuJUwSm.png" alt="image-20220920204056891"></p>
 <p>符号位确定：</p>
-<p><img src="D:\笔记\照片\image-20220920205022240.png" alt="image-20220920205022240"></p>
+<p><img src="https://s2.loli.net/2024/02/24/Eo6mIZkwtciVOAM.png" alt="image-20220920205022240"></p>
 <p>数值位确定： </p>
 <p>被乘数 存到 x 通用寄存器， 乘数存到MQ乘商寄存器中，ACC开始初始为）</p>
 <p><strong>错位相加，ACC与MQ统一右移</strong>，MQ最低位已经参与运算直接丢弃</p>
-<p><img src="D:\笔记\照片\image-20220920205723411.png" alt="image-20220920205723411"></p>
+<p><img src="https://s2.loli.net/2024/02/24/LCdpPDF4QzABUcY.png" alt="image-20220920205723411"></p>
 <p>最后修改符号位</p>
-<p><img src="D:\笔记\照片\image-20220920210801009.png" alt="image-20220920210801009"></p>
-<h4 id="补码乘法"><a href="#补码乘法" class="headerlink" title="补码乘法"></a>补码乘法</h4><p><img src="D:\笔记\照片\image-20220920212002827.png" alt="image-20220920212002827"></p>
+<p><img src="https://s2.loli.net/2024/02/24/eF7fjRbh59nUgAv.png" alt="image-20220920210801009"></p>
+<h4 id="补码乘法"><a href="#补码乘法" class="headerlink" title="补码乘法"></a>补码乘法</h4><p><img src="https://s2.loli.net/2024/02/24/INGKZF2t6sdCuA3.png" alt="image-20220920212002827"></p>
 <p><img src="D:\笔记\照片\image-20220920212400846.png" alt="image-20220920212400846"></p>
 <p><img src="D:\笔记\照片\image-20220920213643796.png" alt="image-20220920213643796"></p>
 <h3 id="除法运算"><a href="#除法运算" class="headerlink" title="除法运算"></a>除法运算</h3><p>除法的思想</p>
