@@ -11433,6 +11433,8 @@
 <li>内部组件化程度高，可插拔式组件<strong>即插即用</strong>，想要什么功能配置相应组件即可</li>
 <li><strong>性能卓著</strong>，尤其适合现代大型、超大型互联网项目要求</li>
 </ul>
+<h3 id="4、SpringMVC内部流程"><a href="#4、SpringMVC内部流程" class="headerlink" title="4、SpringMVC内部流程"></a>4、SpringMVC内部流程</h3><p><img src="https://s2.loli.net/2024/03/09/yam5LDiko3ZAhI1.png" alt="image-20240309230254345"></p>
+<p><img src="https://s2.loli.net/2024/03/09/kpO6cFGBgLtR135.png" alt="img"></p>
 <h1 id="二、HelloWorld"><a href="#二、HelloWorld" class="headerlink" title="二、HelloWorld"></a>二、HelloWorld</h1><h3 id="1、开发环境"><a href="#1、开发环境" class="headerlink" title="1、开发环境"></a>1、开发环境</h3><p>IDE：idea 2019.2</p>
 <p>构建工具：maven3.5.4</p>
 <p>服务器：tomcat7</p>
