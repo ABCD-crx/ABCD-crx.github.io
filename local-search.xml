@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>BFF</title>
+    <link href="/2024/05/29/%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%85/BFF%E4%B8%AD%E9%97%B4%E5%B1%82/"/>
+    <url>/2024/05/29/%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%85/BFF%E4%B8%AD%E9%97%B4%E5%B1%82/</url>
+    
+    <content type="html"><![CDATA[<h1 id="BFF层是什么东东？"><a href="#BFF层是什么东东？" class="headerlink" title="BFF层是什么东东？"></a>BFF层是什么东东？</h1><p>BFF（Backend-for-Frontend）中间层是一种架构模式，主要用于解决前后端协作和微服务架构中的数据聚合问题。在这种架构下，前端应用程序不直接与后端服务通信，而是通过一个专门为前端定制的 BFF 中间层与后端服务交互。BFF 中间层负责与多个后端服务进行通信，聚合数据，并将结果返回给前端应用程序。</p><p><strong>BFF 中间层主要作用是：</strong></p><ol><li>为前端应用程序提供一个统一的 API 接口，简化前端应用程序的开发和维护。</li><li>负责与多个后端服务进行通信，聚合数据，降低前端应用程序的复杂度。</li><li>提供负载均衡、服务发现、缓存、错误处理和重试策略等功能，提高系统的性能和可用性。</li></ol><h3 id="BFF-中间层的优势"><a href="#BFF-中间层的优势" class="headerlink" title="BFF 中间层的优势"></a>BFF 中间层的优势</h3><ol><li><strong>简化前端应用程序的开发和维护</strong>：BFF 中间层为前端应用程序提供一个统一的 API 接口，前端只需关注与 BFF 中间层的交互，无需关心后端服务的具体实现。这使得前端应用程序的开发和维护变得更加简单。</li><li><strong>提高团队协作效率</strong>：BFF 中间层将前后端的职责划分得更加明确，前端团队可以专注于前端应用程序的开发，后端团队可以专注于后端服务的开发。这种分工明确的架构有助于提高团队的协作效率，加快项目的迭代速度。</li><li><strong>降低前端应用程序的复杂度</strong>：在没有 BFF 中间层的情况下，前端应用程序需要与多个后端服务直接通信，这将导致前端应用程序的复杂度增加。BFF 中间层负责与多个后端服务进行通信，聚合数据，将复杂的业务逻辑从前端应用程序中剥离，降低前端应用程序的复杂度。</li><li><strong>提高系统的性能和可用性</strong>：BFF 中间层提供负载均衡、服务发现、缓存、错误处理和重试策略等功能，可以有效地提高系统的性能和可用性。</li><li><strong>适应多种客户端场景</strong>：由于 BFF 中间层可以针对不同的客户端（如 Web、移动端等）提供定制化的 API 接口，使得系统能够更好地适应多种客户端场景。</li></ol><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">主要流程理解：<br>前端请求<span class="hljs-keyword">BFF层， </span>再由<span class="hljs-keyword">BFF层请求具体后端微服务。</span><br><span class="hljs-keyword"></span>感觉存在问题： 网络相应时间是否过长<br></code></pre></td></tr></table></figure><h3 id="BFF-会做以下事情："><a href="#BFF-会做以下事情：" class="headerlink" title="BFF 会做以下事情："></a>BFF 会做以下事情：</h3><ul><li>调用相关微服务的 API 并获取所需的数据</li><li>基于前端的表示去格式化数据</li><li>发送格式化后的数据给前端</li></ul><p>这样之后，前端将保留更少的逻辑。因此，BFF 有助于简化数据表示，并负责给前端提供重点突出的接口。</p><p><img src="https://s2.loli.net/2024/05/29/BcROqD3FNLd4MKV.webp" alt="img"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Dev_life</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>BFF</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>docker</title>
     <link href="/2024/02/05/Linux/docker/"/>
     <url>/2024/02/05/Linux/docker/</url>
